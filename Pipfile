@@ -8,6 +8,7 @@ django = "*"
 psycopg = {extras = ["binary"], version = "*"}
 django-environ = "*"
 psycopg2-binary = "*"
+django-money = "*"
 
 [dev-packages]
 
