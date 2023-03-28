@@ -9,6 +9,7 @@ psycopg = {extras = ["binary"], version = "*"}
 django-environ = "*"
 psycopg2-binary = "*"
 django-money = "*"
+pillow = "*"
 
 [dev-packages]
 
