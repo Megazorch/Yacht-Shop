@@ -49,6 +49,7 @@ class Yacht(models.Model):
     description = models.TextField(max_length=1000, help_text='Enter a brief description of the yacht')
     contact_info = models.TextField(max_length=100, null=True, blank=True)
     other_details = models.TextField(max_length=1500)
+    yacht_image = models.ImageField(null=True, blank=True, upload_to='images/')
 
     class Meta:
         ordering = ['make', 'model']
