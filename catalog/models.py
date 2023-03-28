@@ -33,13 +33,13 @@ class Yacht(models.Model):
         ('S', 'Steel'),
         ('W', 'Wood'),
     )
-    price = MoneyField(max_digits=7, decimal_places=0, default_currency='USD', help_text="Enter price of the yacht.")
+    price = MoneyField(max_digits=10, decimal_places=0, default_currency='USD', help_text="Enter price of the yacht.")
     location = models.CharField(max_length=35, help_text="Enter the city and country where the yacht is situated.")
     year = models.PositiveIntegerField(help_text="Enter the year of build of the yacht.")
-    make = make = models.CharField(max_length=40, help_text="Enter the maker company name.")
+    make = models.CharField(max_length=40, help_text="Enter the maker company name.")
     model = models.CharField(max_length=10, help_text="Enter the model type of the yacht.")
     boat_class = models.CharField(max_length=25, help_text="Enter the class of the yacht.")
-    length = models.DecimalField(max_digits=4, decimal_places=2, help_text="Enter the exact length of the yacht in ft.")
+    length = models.DecimalField(max_digits=5, decimal_places=2, help_text="Enter the exact length of the yacht in ft.")
     # приблизний результат, розділити значення довжина на 3,2808399
     fuel_type = models.CharField(max_length=2, choices=FUEL_TYPES, default='O')
     hull_material = models.CharField(max_length=2, choices=HULL_MATERIAL, default='O')
@@ -67,8 +67,8 @@ class Propulsion(models.Model):
     yacht = models.ForeignKey(Yacht, on_delete=models.CASCADE)
     engine_make = models.CharField(max_length=20, help_text="Enter engine maker.")
     engine_model = models.CharField(max_length=20, help_text="Enter engine model.")
-    engine_year = models.PositiveIntegerField(help_text="Enter the year of build of the engine.")
-    total_power = models.PositiveIntegerField(
+    engine_year = models.PositiveIntegerField(null=True, blank=True, help_text="Enter the year of build of the engine.")
+    total_power = models.PositiveIntegerField(null=True, blank=True,
                                               help_text="Enter the total power of engine in Horse Powers.")
     engine_hours = models.PositiveIntegerField(null=True, blank=True,
                                                help_text="Enter amount of hours engine has been in use.")
@@ -94,11 +94,13 @@ class Propulsion(models.Model):
 class Specifications(models.Model):
     """Model representing specific information about yacht."""
     yacht = models.ForeignKey(Yacht, on_delete=models.CASCADE)
-    cruising_speed = models.DecimalField(max_digits=2, decimal_places=1, null=True, blank=True,
+    cruising_speed = models.DecimalField(max_digits=3, decimal_places=1, null=True, blank=True,
                                          help_text="Cruising speed in kn.")
-    max_speed = models.DecimalField(max_digits=2, decimal_places=1, null=True, blank=True,
+    max_speed = models.DecimalField(max_digits=3, decimal_places=1, null=True, blank=True,
                                     help_text="Maximum speed in kn.")
-    length_overall = models.DecimalField(max_digits=4, decimal_places=2, null=True, blank=True, help_text='LOA in ft.')
+    range = models.PositiveIntegerField(null=True, blank=True,
+                                        help_text="The max. distance that the yacht can travel from the shore in nm.")
+    length_overall = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True, help_text='LOA in ft.')
     max_draft = models.DecimalField(max_digits=4, decimal_places=2, null=True, blank=True, help_text='Max draft in ft.')
     beam = models.DecimalField(max_digits=4, decimal_places=2, null=True, blank=True, help_text='Beam length in ft.')
     length_at_waterline = models.DecimalField(max_digits=4, decimal_places=2, null=True, blank=True,
@@ -111,6 +113,7 @@ class Specifications(models.Model):
     holding_tank = models.CharField(max_length=25, null=True, blank=True, help_text="Example: 1 X 87 Gal (Plastic)")
     single_berths = models.PositiveIntegerField(null=True, blank=True)
     double_berths = models.PositiveIntegerField(null=True, blank=True)
+    twin_berths = models.PositiveIntegerField(null=True, blank=True)
     cabins = models.PositiveIntegerField(null=True, blank=True)
     heads = models.PositiveIntegerField(null=True, blank=True)
 
