@@ -1,0 +1,27 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+    <title>Yacht Shop - Index Page</title>
+{% endblock %}
+
+{% block one %}
+    <section class="container py-5">
+        <div class="row text-center pt-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Category of The Month</h1>
+                <p>
+                    The most expensive yachts.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            {% for yacht in yachts %}
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="{{ yacht.yacht_image.url }}" class="rounded-circle img-fluid border"></a>
+                <h5 class="text-center mt-3 mb-3">{{ yacht }}</h5>
+                <p class="text-center"><a class="btn btn-success" href="shop">Go Shop</a></p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock one %}
