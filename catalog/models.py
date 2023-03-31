@@ -37,7 +37,7 @@ class Yacht(models.Model):
     location = models.CharField(max_length=35, help_text="Enter the city and country where the yacht is situated.")
     year = models.PositiveIntegerField(help_text="Enter the year of build of the yacht.")
     make = models.CharField(max_length=40, help_text="Enter the maker company name.")
-    model = models.CharField(max_length=10, help_text="Enter the model type of the yacht.")
+    model = models.CharField(max_length=40, help_text="Enter the model type of the yacht.")
     boat_class = models.CharField(max_length=25, help_text="Enter the class of the yacht.")
     length = models.DecimalField(max_digits=5, decimal_places=2, help_text="Enter the exact length of the yacht in ft.")
     # приблизний результат, розділити значення довжина на 3,2808399
@@ -104,9 +104,9 @@ class Specifications(models.Model):
     length_overall = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True, help_text='LOA in ft.')
     max_draft = models.DecimalField(max_digits=4, decimal_places=2, null=True, blank=True, help_text='Max draft in ft.')
     beam = models.DecimalField(max_digits=4, decimal_places=2, null=True, blank=True, help_text='Beam length in ft.')
-    length_at_waterline = models.DecimalField(max_digits=4, decimal_places=2, null=True, blank=True,
+    length_at_waterline = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True,
                                               help_text='Length in ft.')
-    dry_weight = models.DecimalField(max_digits=4, decimal_places=2, null=True, blank=True,
+    dry_weight = models.DecimalField(max_digits=6, decimal_places=3, null=True, blank=True,
                                      help_text='Example: 68,343Lb')
     windlass = models.CharField(max_length=25, null=True, blank=True, help_text="Enter type of windlass.")
     fresh_water_tank = models.CharField(max_length=25, null=True, blank=True, help_text="Example: 1 X 87 Gal (Plastic)")
