@@ -60,7 +60,7 @@ class Yacht(models.Model):
 
     def __str__(self):
         """String for representing the Model object."""
-        return f'{self.year} {self.make} {self.model} | {self.length}'
+        return f'{self.year} {self.make} {self.model} | {self.length} ft.'
 
 
 class Propulsion(models.Model):
