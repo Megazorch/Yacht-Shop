@@ -17,33 +17,39 @@
                 <ul class="list-unstyled templatemo-accordion">
                     <li class="pb-3">
                         <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            Gender
+                            Power
                             <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
                         <ul class="collapse show list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Men</a></li>
-                            <li><a class="text-decoration-none" href="#">Women</a></li>
+                            {% for class in power_yachts %}
+                                <li><a class="text-decoration-none" href="#">{{ class }}</a></li>
+                            {% endfor %}
                         </ul>
                     </li>
                     <li class="pb-3">
                         <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            Sale
+                            Sail
                             <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
                         <ul id="collapseTwo" class="collapse list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Sport</a></li>
-                            <li><a class="text-decoration-none" href="#">Luxury</a></li>
+                            {% if not sail_yachts %}
+                                <li><a class="text-decoration-none" href="#">None</a></li>
+                            {% else %}
+                                {% for class in sail_yachts %}
+                                    <li><a class="text-decoration-none" href="#">{{ class }}</a></li>
+                                {% endfor %}
+                            {% endif %}
                         </ul>
                     </li>
                     <li class="pb-3">
                         <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            Product
+                            Both
                             <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
                         <ul id="collapseThree" class="collapse list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Bag</a></li>
-                            <li><a class="text-decoration-none" href="#">Sweather</a></li>
-                            <li><a class="text-decoration-none" href="#">Sunglass</a></li>
+                            {% for class in both_category_yachts %}
+                                <li><a class="text-decoration-none" href="#">{{ class }}</a></li>
+                            {% endfor %}
                         </ul>
                     </li>
                 </ul>
@@ -85,13 +91,13 @@
                                         <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                             <ul class="list-unstyled">
                                                 <li><a class="btn btn-success text-white" href="{{ yacht.get_absolute_url }}"><i class="far fa-heart"></i></a></li>
-                                                <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="far fa-eye"></i></a></li>
-                                                <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
+                                                <li><a class="btn btn-success text-white mt-2" href="{{ yacht.get_absolute_url }}"><i class="far fa-eye"></i></a></li>
+                                                <li><a class="btn btn-success text-white mt-2" href="{{ yacht.get_absolute_url }}"><i class="fas fa-cart-plus"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <a href="shop-single.html" class="h3 text-decoration-none">{{ yacht }}</a>
+                                        <a href="{{ yacht.get_absolute_url }}" class="h3 text-decoration-none">{{ yacht }}</a>
                                         <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                                             <li>{{ yacht.boat_class }}</li>
                                             <li class="pt-2">
