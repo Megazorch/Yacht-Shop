@@ -12,6 +12,15 @@ class Broker(models.Model):
         return self.broker
 
 
+class Category(models.Model):
+    """Model representing different types of propulsion of the yachts."""
+    category = models.CharField(max_length=25, help_text='Enter the name of category.')
+
+    def __str__(self):
+        """String for representing the Model object."""
+        return self.category
+
+
 class Yacht(models.Model):
     """Model representing the basic characteristics of the yacht."""
     FUEL_TYPES = (
@@ -49,6 +58,7 @@ class Yacht(models.Model):
     description = models.TextField(max_length=1000, help_text='Enter a brief description of the yacht')
     contact_info = models.TextField(max_length=100, null=True, blank=True)
     other_details = models.TextField(max_length=1500)
+    category = models.ManyToManyField(Category, help_text="Enter the category of the yacht.")
     yacht_image = models.ImageField(null=True, blank=True, upload_to='images/')
 
     class Meta:
@@ -57,6 +67,28 @@ class Yacht(models.Model):
     def get_absolute_url(self):
         """Returns the URL to access a particular author instance."""
         return reverse('yacht-detail', args=[str(self.id)])
+
+    def all_basic_fields(self):
+        """
+        Returns a list of tuples containing all the field names and values
+        for this specification. Thanks to ChatGPT.
+        """
+        fields_all = []
+        for field in self._meta.fields:
+            if field.name == 'id' or field.name == 'yacht':
+                continue
+            else:
+                field_name = field.name.capitalize().replace("_", " ")
+                if field.name == 'fuel_type':
+                    field_value = self.get_fuel_type_display()
+                elif field.name == 'hull_material':
+                    field_value = self.get_hull_material_display()
+                else:
+                    field_value = getattr(self, field.name)
+                field_tuple = (field_name, field_value)
+                fields_all.append(field_tuple)
+
+        return fields_all[3:13]
 
     def __str__(self):
         """String for representing the Model object."""
@@ -122,9 +154,23 @@ class Specifications(models.Model):
         """Returns the URL to access a particular author instance."""
         return reverse('specifications-detail', args=[str(self.id)])
 
+    def all_fields(self):
+        """
+        Returns a list of tuples containing all the field names and values
+        for this specification. Thanks to ChatGPT.
+        """
+        fields_all = []
+        for field in self._meta.fields:
+            if field.name == 'id' or field.name == 'yacht':
+                continue
+            else:
+                field_name = field.name.capitalize().replace("_", " ")
+                field_value = getattr(self, field.name)
+                field_tuple = (field_name, field_value)
+                fields_all.append(field_tuple)
+
+        return fields_all
+
     def __str__(self):
         """String for representing the Model object."""
         return f'{self.yacht} - Specifications'
-
-
-
