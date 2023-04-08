@@ -4,49 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Creating index.html and shop.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/animate.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/jquery-ui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/jquery.mCustomScrollbar.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/meanmenu.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/nice-select.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/owl.carousel.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/slick.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/images/about-img1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/images/banner-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/images/contact-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/images/img-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/images/img-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/images/img-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/images/left-quote.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/images/our-img-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/images/right-quote.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/images/search-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/images/shopping-bag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/images/togle-menu-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/js/custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/js/jquery-3.0.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/js/jquery.mCustomScrollbar.concat.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/js/jquery.validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/js/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/js/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/gallery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/testimonial.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/yacht-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/yacht-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yacht_shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,17 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/ivakhiv/PycharmProjects/yacht_shop/catalog/templates",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ivakhiv/PycharmProjects/yacht_shop/catalog/templates&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/catalog/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/catalog/templates/catalog" />
       <recent name="$PROJECT_DIR$/catalog/templates" />
     </key>
   </component>
@@ -144,7 +115,56 @@
       <option name="project" value="LOCAL" />
       <updated>1680024649822</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="HTML template">
+      <created>1680030728333</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680030728333</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Created urlpatterns to generate an index page.">
+      <created>1680030816306</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680030816306</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Created views to generate an index page.">
+      <created>1680030869532</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680030869532</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Created basic html file which I will modify in other templates.">
+      <created>1680287808160</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680287808160</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Modified some models to fix some errors.">
+      <created>1680288144794</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680288144794</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added path to shop.html">
+      <created>1680288168147</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680288168147</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added simple views to render shop.html">
+      <created>1680288295350</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680288295350</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,6 +175,14 @@
     <MESSAGE value="Migrations" />
     <MESSAGE value="Ignore image folder where the uploaded images are stored." />
     <MESSAGE value="Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+    <MESSAGE value="HTML template" />
+    <MESSAGE value="Created urlpatterns to generate an index page." />
+    <MESSAGE value="Created views to generate an index page." />
+    <MESSAGE value="Created basic html file which I will modify in other templates." />
+    <MESSAGE value="Modified some models to fix some errors." />
+    <MESSAGE value="Added path to shop.html" />
+    <MESSAGE value="Added simple views to render shop.html" />
+    <MESSAGE value="Creating index.html and shop.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating index.html and shop.html" />
   </component>
 </project>
