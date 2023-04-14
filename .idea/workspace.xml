@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Creating index.html and shop.html">
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Fix problem with lints for images in carousel.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/shop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/yacht-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/yacht-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +18,7 @@
       <list>
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -53,6 +47,7 @@
       <recent name="$PROJECT_DIR$/catalog/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/catalog/tests" />
       <recent name="$PROJECT_DIR$/catalog/templates/catalog" />
       <recent name="$PROJECT_DIR$/catalog/templates" />
     </key>
@@ -164,17 +159,129 @@
       <option name="project" value="LOCAL" />
       <updated>1680288295350</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add &quot;Category&quot; to admin.py">
+      <created>1680931187780</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680931187780</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fix problem with loading of JS.">
+      <created>1680931239085</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1680931239085</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Rename block reference to fix a bug.">
+      <created>1680931354983</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680931354983</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added model &quot;Category&quot;; added column 'category' to Yacht model as ManyToManyField; added function to represent all fields in huma-readable stile; added same function for &quot;Specifications&quot; model.">
+      <created>1680931612767</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680931612767</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added categories in sidebar. Links does not work, yet.">
+      <created>1680931708282</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1680931708282</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added path for shop page with full list of yachts and page with full details of the yacht.">
+      <created>1680931803842</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1680931803842</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Modified Yacht List View to represent different categories of yachts in sidebar.">
+      <created>1680931858263</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1680931858263</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Modified page so that all detail data about the yacht is showen properly.">
+      <created>1680931937651</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1680931937651</updated>
+    </task>
+    <task id="LOCAL-00023" summary="I don't know what django did here.">
+      <created>1680931971657</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1680931971657</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Created folder with tests.">
+      <created>1681242831732</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1681242831733</updated>
+    </task>
+    <task id="LOCAL-00025" summary="No forms to test yet.">
+      <created>1681242864861</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1681242864861</updated>
+    </task>
+    <task id="LOCAL-00026" summary="First tests for models. Basically only for Yacht model.">
+      <created>1681242981692</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1681242981692</updated>
+    </task>
+    <task id="LOCAL-00027" summary="First tests for views. Common tests for YachtListView as per Tutorial.">
+      <created>1681243033382</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1681243033382</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Renamed as test_models.py and moved to test folder.">
+      <created>1681243092805</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1681243092805</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Implemented the ability to sort the shop page by category by adding a query parameter in the URL - ChatGPT">
+      <created>1681498213995</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1681498213995</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Turned categories in the sidebar into links to /catalog/yachts/?category={id}">
+      <created>1681498907617</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1681498907617</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Fix problem with lints for images in carousel.">
+      <created>1681498992929</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1681498992929</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added MEDIA_URL and MEDIA_ROOT for media files like images." />
-    <MESSAGE value="Added static setting to urlpattern." />
-    <MESSAGE value="Added yacht_image as ImageField to store data about image url in database." />
-    <MESSAGE value="Installed Pillow package to work with images." />
-    <MESSAGE value="Migrations" />
-    <MESSAGE value="Ignore image folder where the uploaded images are stored." />
-    <MESSAGE value="Commit" />
     <MESSAGE value="HTML template" />
     <MESSAGE value="Created urlpatterns to generate an index page." />
     <MESSAGE value="Created views to generate an index page." />
@@ -183,6 +290,23 @@
     <MESSAGE value="Added path to shop.html" />
     <MESSAGE value="Added simple views to render shop.html" />
     <MESSAGE value="Creating index.html and shop.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating index.html and shop.html" />
+    <MESSAGE value="Add &quot;Category&quot; to admin.py" />
+    <MESSAGE value="Fix problem with loading of JS." />
+    <MESSAGE value="Rename block reference to fix a bug." />
+    <MESSAGE value="Added model &quot;Category&quot;; added column 'category' to Yacht model as ManyToManyField; added function to represent all fields in huma-readable stile; added same function for &quot;Specifications&quot; model." />
+    <MESSAGE value="Added categories in sidebar. Links does not work, yet." />
+    <MESSAGE value="Added path for shop page with full list of yachts and page with full details of the yacht." />
+    <MESSAGE value="Modified Yacht List View to represent different categories of yachts in sidebar." />
+    <MESSAGE value="Modified page so that all detail data about the yacht is showen properly." />
+    <MESSAGE value="I don't know what django did here." />
+    <MESSAGE value="Created folder with tests." />
+    <MESSAGE value="No forms to test yet." />
+    <MESSAGE value="First tests for models. Basically only for Yacht model." />
+    <MESSAGE value="First tests for views. Common tests for YachtListView as per Tutorial." />
+    <MESSAGE value="Renamed as test_models.py and moved to test folder." />
+    <MESSAGE value="Implemented the ability to sort the shop page by category by adding a query parameter in the URL - ChatGPT" />
+    <MESSAGE value="Turned categories in the sidebar into links to /catalog/yachts/?category={id}" />
+    <MESSAGE value="Fix problem with lints for images in carousel." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix problem with lints for images in carousel." />
   </component>
 </project>
