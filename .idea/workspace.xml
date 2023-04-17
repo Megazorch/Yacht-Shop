@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Used Django template tags to parse first image for each yacht instance.">
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Totally refactored carousel. Now for loop creates 3 slides with 3 images of yacht.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/yacht-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/yacht-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yacht_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,15 +39,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ivakhiv/PycharmProjects/yacht_shop/catalog/templates&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/ivakhiv/PycharmProjects/yacht_shop/catalog/templates",
+    "settings.editor.selected.configurable": "preferences.externalResources"
   }
-}</component>
+}]]></component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="yacht_shop" is-module-sdk="true">
+        <envs>
+          <env key="DJANGO_SETTINGS_MODULE" value="yacht_shop.settings" />
+        </envs>
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="yacht_shop" />
+        <option name="myEnvs">
+          <map>
+            <entry key="DJANGO_SETTINGS_MODULE" value="yacht_shop.settings" />
+          </map>
+        </option>
+      </console-settings>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/catalog/templates" />
@@ -306,12 +328,24 @@
       <option name="project" value="LOCAL" />
       <updated>1681747759084</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Don't know what is it.">
+      <created>1681747798568</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1681747798569</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Totally refactored carousel. Now for loop creates 3 slides with 3 images of yacht.">
+      <created>1681747867538</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1681747867538</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modified some models to fix some errors." />
-    <MESSAGE value="Added path to shop.html" />
     <MESSAGE value="Added simple views to render shop.html" />
     <MESSAGE value="Creating index.html and shop.html" />
     <MESSAGE value="Add &quot;Category&quot; to admin.py" />
@@ -335,6 +369,19 @@
     <MESSAGE value="Added Image unit to admin site." />
     <MESSAGE value="Added ordering for Broker unit. Created Image unit and alter yacht_image object from Foreign Key to ManyToMany." />
     <MESSAGE value="Used Django template tags to parse first image for each yacht instance." />
-    <option name="LAST_COMMIT_MESSAGE" value="Used Django template tags to parse first image for each yacht instance." />
+    <MESSAGE value="Don't know what is it." />
+    <MESSAGE value="Totally refactored carousel. Now for loop creates 3 slides with 3 images of yacht." />
+    <option name="LAST_COMMIT_MESSAGE" value="Totally refactored carousel. Now for loop creates 3 slides with 3 images of yacht." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/catalog/views.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
