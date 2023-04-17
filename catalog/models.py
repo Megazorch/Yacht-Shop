@@ -102,6 +102,7 @@ class Yacht(models.Model):
 
 class Image(models.Model):
     image = models.ImageField(upload_to='images/')
+    #yacht = models.ForeignKey(Yacht, null=True, blank=True, on_delete=models.CASCADE)
 
     class Meta:
         ordering = ['image']
@@ -189,3 +190,22 @@ class Specifications(models.Model):
     def __str__(self):
         """String for representing the Model object."""
         return f'{self.yacht} - Specifications'
+
+
+class Cart(models.Model):
+    pass
+
+class CartLineItem(models.Model):
+    cart = models.ForeignKey(Cart, on_delete=models.CASCADE, help_text='Choose Cart id.')
+    yacht = models.ForeignKey(Yacht, on_delete=models.CASCADE, help_text='Choose Yacht id.')
+    count = models.PositiveIntegerField(help_text='Enter number of items.')
+
+    class Meta:
+        ordering = ['id']
+
+    def get_absolute_url(self):
+        """Returns the URL to access a particular author instance."""
+        return reverse('cart-detail', args=[str(self.id)])
+
+    def __str__(self):
+        return f'{self.cart} - {self.yacht}: {self.count}'
