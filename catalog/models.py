@@ -7,6 +7,9 @@ class Broker(models.Model):
     """Model representing the maker of yachts."""
     broker = models.CharField(max_length=50, help_text='Enter the name of seller (broker).')
 
+    class Meta:
+        ordering = ['broker']
+
     def __str__(self):
         """String for representing the Model object."""
         return self.broker
@@ -59,7 +62,7 @@ class Yacht(models.Model):
     contact_info = models.TextField(max_length=100, null=True, blank=True)
     other_details = models.TextField(max_length=1500)
     category = models.ManyToManyField(Category, help_text="Enter the category of the yacht.")
-    yacht_image = models.ImageField(null=True, blank=True, upload_to='images/')
+    yacht_image = models.ManyToManyField('Image', related_name='yachts')
 
     class Meta:
         ordering = ['make', 'model']
@@ -93,6 +96,15 @@ class Yacht(models.Model):
     def __str__(self):
         """String for representing the Model object."""
         return f'{self.year} {self.make} {self.model} | {self.length} ft.'
+
+class Image(models.Model):
+    image = models.ImageField(upload_to='images/')
+
+    class Meta:
+        ordering = ['image']
+
+    def __str__(self):
+        return f"{self.image.name}"
 
 
 class Propulsion(models.Model):
