@@ -68,7 +68,13 @@
                             <div class="col-md-4">
                                 <div class="card mb-4 product-wap rounded-0">
                                     <div class="card rounded-0">
-                                        <img class="card-img rounded-0 img-fluid" src="{{ yacht.yacht_image.url }}">
+                                        {% with yacht.yacht_image.first as first_image %}
+                                                {% if first_image %}
+                                                    <img class="card-img rounded-0 img-fluid" src="{{ first_image.image.url }}" alt="Yacht Image">
+                                                {% else %}
+                                                    <p>No image available</p>
+                                                {% endif %}
+                                            {% endwith %}
                                         <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                             <ul class="list-unstyled">
                                                 <li><a class="btn btn-success text-white" href="{{ yacht.get_absolute_url }}"><i class="far fa-heart"></i></a></li>
