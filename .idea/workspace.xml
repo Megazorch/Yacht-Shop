@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Fix problem with lints for images in carousel.">
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Used Django template tags to parse first image for each yacht instance.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/yacht-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/yacht-detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,14 +278,38 @@
       <option name="project" value="LOCAL" />
       <updated>1681498992929</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Created test of view. (Not finished)">
+      <created>1681500792348</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1681500792348</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added Image unit to admin site.">
+      <created>1681747453132</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1681747453132</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added ordering for Broker unit. Created Image unit and alter yacht_image object from Foreign Key to ManyToMany.">
+      <created>1681747659085</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1681747659085</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Used Django template tags to parse first image for each yacht instance.">
+      <created>1681747759084</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1681747759084</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HTML template" />
-    <MESSAGE value="Created urlpatterns to generate an index page." />
-    <MESSAGE value="Created views to generate an index page." />
-    <MESSAGE value="Created basic html file which I will modify in other templates." />
     <MESSAGE value="Modified some models to fix some errors." />
     <MESSAGE value="Added path to shop.html" />
     <MESSAGE value="Added simple views to render shop.html" />
@@ -307,6 +331,10 @@
     <MESSAGE value="Implemented the ability to sort the shop page by category by adding a query parameter in the URL - ChatGPT" />
     <MESSAGE value="Turned categories in the sidebar into links to /catalog/yachts/?category={id}" />
     <MESSAGE value="Fix problem with lints for images in carousel." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix problem with lints for images in carousel." />
+    <MESSAGE value="Created test of view. (Not finished)" />
+    <MESSAGE value="Added Image unit to admin site." />
+    <MESSAGE value="Added ordering for Broker unit. Created Image unit and alter yacht_image object from Foreign Key to ManyToMany." />
+    <MESSAGE value="Used Django template tags to parse first image for each yacht instance." />
+    <option name="LAST_COMMIT_MESSAGE" value="Used Django template tags to parse first image for each yacht instance." />
   </component>
 </project>
