@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-lg-5 mt-5">
                     <div class="card mb-3">
-                        <img class="card-img img-fluid" src="{{ yacht.yacht_image.url }}" alt="Card image cap" id="product-detail">
+                        <img class="card-img img-fluid" src="{{ yacht.yacht_image.first.image.url }}" alt="Card image cap" id="product-detail">
                     </div>
                     <div class="row">
                         <!--Start Controls-->
@@ -30,70 +30,38 @@
                             <div class="carousel-inner product-links-wap" role="listbox">
 
                                 <!--First slide-->
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <a href="#">
-                                                <img class="card-img img-fluid" src="{{ yacht.yacht_image.url }}" alt="Product Image 1">
-                                            </a>
+                                {% for i in '123' %}
+                                    {% if forloop.counter == 1 %}
+                                        <div class="carousel-item active">
+                                    {% else %}
+                                        <div class="carousel-item">
+                                    {% endif %}
+                                            <div class="row">
+                                                {% for image in yacht.yacht_image.all %}
+                                                    {% if forloop.parentloop.counter == 1 and forloop.counter <= 3 %}
+                                                        <div class="col-4">
+                                                            <a href="#">
+                                                                <img class="card-img img-fluid" src="{{ image.image.url }}" alt="Product Image 1">
+                                                            </a>
+                                                        </div>
+                                                    {% elif forloop.parentloop.counter == 2 and forloop.counter > 3 and forloop.counter <= 6 %}
+                                                        <div class="col-4">
+                                                            <a href="#">
+                                                                <img class="card-img img-fluid" src="{{ image.image.url }}" alt="Product Image 1">
+                                                            </a>
+                                                        </div>
+                                                    {% elif forloop.parentloop.counter == 3 and forloop.counter > 6%}
+                                                        <div class="col-4">
+                                                            <a href="#">
+                                                                <img class="card-img img-fluid" src="{{ image.image.url }}" alt="Product Image 1">
+                                                            </a>
+                                                        </div>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </div>
                                         </div>
-                                        <div class="col-4">
-                                            <a href="#">
-                                                <img class="card-img img-fluid" src="{% static 'img/product_single_02.jpg' %}" alt="Product Image 2">
-                                            </a>
-                                        </div>
-                                        <div class="col-4">
-                                            <a href="#">
-                                                <img class="card-img img-fluid" src="{% static 'img/product_single_03.jpg' %}" alt="Product Image 3">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                {% endfor %}
                                 <!--/.First slide-->
-
-                                <!--Second slide-->
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <a href="#">
-                                                <img class="card-img img-fluid" src="{% static 'img/product_single_04.jpg' %}" alt="Product Image 4">
-                                            </a>
-                                        </div>
-                                        <div class="col-4">
-                                            <a href="#">
-                                                <img class="card-img img-fluid" src="{% static 'img/product_single_05.jpg' %}" alt="Product Image 5">
-                                            </a>
-                                        </div>
-                                        <div class="col-4">
-                                            <a href="#">
-                                                <img class="card-img img-fluid" src="{% static 'img/product_single_06.jpg' %}" alt="Product Image 6">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/.Second slide-->
-
-                                <!--Third slide-->
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <a href="#">
-                                                <img class="card-img img-fluid" src="{% static 'img/product_single_07.jpg' %}" alt="Product Image 7">
-                                            </a>
-                                        </div>
-                                        <div class="col-4">
-                                            <a href="#">
-                                                <img class="card-img img-fluid" src="{% static 'img/product_single_08.jpg' %}" alt="Product Image 8">
-                                            </a>
-                                        </div>
-                                        <div class="col-4">
-                                            <a href="#">
-                                                <img class="card-img img-fluid" src="{% static 'img/product_single_09.jpg' %}" alt="Product Image 9">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/.Third slide-->
                             </div>
                             <!--End Slides-->
                         </div>
