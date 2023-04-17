@@ -15,24 +15,18 @@
             <div class="col-lg-3">
                 <h1 class="h2 pb-4">Categories</h1>
                 <ul class="list-unstyled templatemo-accordion">
-                    <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="/catalog/yachts/?category=1">
-                            Power
-                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
-                        </a>
-                        <ul class="collapse show list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">None</a></li>
-                        </ul>
-                    </li>
-                    <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="/catalog/yachts/?category=2">
-                            Sail
-                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
-                        </a>
-                        <ul id="collapseTwo" class="collapse list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">None</a></li>
-                        </ul>
-                    </li>
+                    {% for category in categories %}
+                        <li class="pb-3">
+                            <a class="collapsed d-flex justify-content-between h3 text-decoration-none"
+                               href="/catalog/yachts/?category={{ forloop.counter }}">
+                                {{ category.category }}
+                                <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                            </a>
+                            <ul class="collapse show list-unstyled pl-3">
+                                <li><a class="text-decoration-none" href="#">None</a></li>
+                            </ul>
+                        </li>
+                    {% endfor %}
                 </ul>
             </div>
 
@@ -43,12 +37,12 @@
                             <li class="list-inline-item">
                                 <a class="h3 text-dark text-decoration-none mr-3" href="/catalog/yachts/">All</a>
                             </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none mr-3" href="/catalog/yachts/?category=1">Power</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none" href="/catalog/yachts/?category=2">Sail</a>
-                            </li>
+                            {% for category in categories %}
+                                <li class="list-inline-item">
+                                    <a class="h3 text-dark text-decoration-none mr-3"
+                                    href="/catalog/yachts/?category={{ forloop.counter }}">{{ category.category }}</a>
+                                </li>
+                            {% endfor %}
                         </ul>
                     </div>
                     <div class="col-md-6 pb-4">
