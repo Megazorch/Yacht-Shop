@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Totally refactored carousel. Now for loop creates 3 slides with 3 images of yacht.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/shop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yacht_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -342,17 +333,73 @@
       <option name="project" value="LOCAL" />
       <updated>1681747867538</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Add ordering by 'id' for categories.">
+      <created>1681758106287</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1681758106287</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Created Cart and CartLineItem instances for future Cart page.">
+      <created>1681758161829</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1681758161829</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Installed django-debug-toolbar">
+      <created>1681758189650</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1681758189650</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Installed django-debug-toolbar">
+      <created>1681758195428</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1681758195428</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Installed django-debug-toolbar and setuped django site.">
+      <created>1681758228260</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1681758228260</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Made categories appear from Category instance, not hardcoded.">
+      <created>1681758310692</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1681758310692</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Installed django-debug-toolbar">
+      <created>1681758330352</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1681758330352</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Passed Category objects to YachtListView for shop.html">
+      <created>1681758371060</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1681758371060</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Commit">
+      <created>1681758382783</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1681758382783</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added simple views to render shop.html" />
-    <MESSAGE value="Creating index.html and shop.html" />
-    <MESSAGE value="Add &quot;Category&quot; to admin.py" />
-    <MESSAGE value="Fix problem with loading of JS." />
-    <MESSAGE value="Rename block reference to fix a bug." />
-    <MESSAGE value="Added model &quot;Category&quot;; added column 'category' to Yacht model as ManyToManyField; added function to represent all fields in huma-readable stile; added same function for &quot;Specifications&quot; model." />
-    <MESSAGE value="Added categories in sidebar. Links does not work, yet." />
     <MESSAGE value="Added path for shop page with full list of yachts and page with full details of the yacht." />
     <MESSAGE value="Modified Yacht List View to represent different categories of yachts in sidebar." />
     <MESSAGE value="Modified page so that all detail data about the yacht is showen properly." />
@@ -371,7 +418,14 @@
     <MESSAGE value="Used Django template tags to parse first image for each yacht instance." />
     <MESSAGE value="Don't know what is it." />
     <MESSAGE value="Totally refactored carousel. Now for loop creates 3 slides with 3 images of yacht." />
-    <option name="LAST_COMMIT_MESSAGE" value="Totally refactored carousel. Now for loop creates 3 slides with 3 images of yacht." />
+    <MESSAGE value="Add ordering by 'id' for categories." />
+    <MESSAGE value="Created Cart and CartLineItem instances for future Cart page." />
+    <MESSAGE value="Installed django-debug-toolbar and setuped django site." />
+    <MESSAGE value="Made categories appear from Category instance, not hardcoded." />
+    <MESSAGE value="Installed django-debug-toolbar" />
+    <MESSAGE value="Passed Category objects to YachtListView for shop.html" />
+    <MESSAGE value="Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
