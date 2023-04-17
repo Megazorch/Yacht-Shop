@@ -19,6 +19,9 @@ class Category(models.Model):
     """Model representing different types of propulsion of the yachts."""
     category = models.CharField(max_length=25, help_text='Enter the name of category.')
 
+    class Meta:
+        ordering = ['id']
+
     def __str__(self):
         """String for representing the Model object."""
         return self.category
