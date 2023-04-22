@@ -1,6 +1,8 @@
 from django.db import models
 from djmoney.models.fields import MoneyField
 from django.urls import reverse  # Used to generate URLs by reversing the URL patterns
+import os
+from django.core.files.storage import default_storage
 
 
 class Broker(models.Model):
@@ -100,12 +102,21 @@ class Yacht(models.Model):
         """String for representing the Model object."""
         return f'{self.year} {self.make} {self.model} | {self.length} ft.'
 
+
 class Image(models.Model):
     image = models.ImageField(upload_to='images/')
     #yacht = models.ForeignKey(Yacht, null=True, blank=True, on_delete=models.CASCADE)
 
     class Meta:
         ordering = ['image']
+
+    def delete(self, *args, **kwargs):
+        # Delete image file from file system
+        if self.image:
+            image_path = self.image.path
+            if default_storage.exists(image_path):
+                default_storage.delete(image_path)
+        super(Image, self).delete(*args, **kwargs)
 
     def __str__(self):
         return f"{self.image.name}"
