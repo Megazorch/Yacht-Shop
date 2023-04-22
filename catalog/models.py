@@ -204,7 +204,9 @@ class Specifications(models.Model):
 
 
 class Cart(models.Model):
-    pass
+    def __str__(self):
+        return f'Cart #{self.id}'
+
 
 class CartLineItem(models.Model):
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE, help_text='Choose Cart id.')
@@ -219,4 +221,7 @@ class CartLineItem(models.Model):
         return reverse('cart-detail', args=[str(self.id)])
 
     def __str__(self):
-        return f'{self.cart} - {self.yacht}: {self.count}'
+        return f'{self.cart} - {self.yacht} - {self.count} pcs.'
+
+    def total_price(self):
+        return self.yacht.price * self.count
