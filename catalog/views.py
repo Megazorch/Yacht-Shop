@@ -42,5 +42,21 @@ class YachtListView(generic.ListView):
 
 class YachtDetailView(generic.DetailView):
     model = Yacht
-
     template_name = 'yacht-detail.html'
+
+
+class CartDetailView(generic.DetailView):
+    model = Cart
+    template_name = 'cart.html'
+
+    def get_context_data(self, **kwargs):       # ChatGPT
+        context = super().get_context_data(**kwargs)
+        final_price = 0
+        cart_items = CartLineItem.objects.filter(cart=2)
+
+        for item in cart_items:
+            final_price += item.total_price()
+
+        context['cart_items'] = cart_items
+        context['final_price'] = final_price
+        return context
