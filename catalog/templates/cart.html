@@ -1,0 +1,70 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+<title xmlns:style="http://www.w3.org/1999/xhtml">Yacht Shop - Card Page</title>
+{% endblock %}
+
+{% load static %}
+
+{% block one %}
+    <!-- Open Content -->
+    <section class="bg-light">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-lg-5 mt-5">
+                <h6>Тут буде список подібних товарів для покупки.</h6>
+                </div>
+                <!-- col end -->
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body"">
+                            <h1 class="h2">{{ cart }}</h1>
+                            <p class="list-inline-item">User: треба додати фото яхт...</p>
+                            <table style="font-size: 15px; width: 100%; border-collapse: collapse;">
+                                <tr>
+                                    <th style="border: 1px solid black; padding: 8px; text-align: center;">№</th>
+                                    <th style="border: 1px solid black; padding: 8px; text-align: center;">Item name</th>
+                                    <th style="border: 1px solid black; padding: 8px; text-align: center;">Price</th>
+                                    <th style="border: 1px solid black; padding: 8px; text-align: center;">Quantity</th>
+                                    <th style="border: 1px solid black; padding: 8px; text-align: center;">Total price</th>
+                                </tr>
+                                {% for item in cart_items %}
+                                <tr>
+                                    <td style="border: 1px solid black; padding: 8px; text-align: center;">{{ forloop.counter }}</td>
+                                    <td style="border: 1px solid black; padding: 8px; text-align: center;">{{ item.yacht }}</td>
+                                    <td style="border: 1px solid black; padding: 8px; text-align: center;">{{ item.yacht.price }}</td>
+                                    <td style="border: 1px solid black; padding: 8px; text-align: center;">{{ item.count }}</td>
+                                    <td style="border: 1px solid black; padding: 8px; text-align: center;">{{ item.total_price }}</td>
+                                </tr>
+                                {% endfor %}
+                            </table>
+
+                            <form action="" method="GET">
+                                <br>
+                                <h6>
+                                    Final price: {{ final_price }}
+                                </h6>
+                                </br>
+                                <input type="hidden" name="product-title" value="Activewear">
+                                <div class="row pb-3">
+                                    <div class="col d-grid">
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Buy</button>
+                                    </div>
+                                    <div class="col d-grid">
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="addtocard">Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Close Content -->
+    {% endblock one %}
+
+</body>
+
+</html>
