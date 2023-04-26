@@ -4,15 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/catalog/templates/cart.html" afterDir="false" />
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="HZ">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/logged_out.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/yacht-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/yacht-detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yacht_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yacht_shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
@@ -39,15 +50,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ivakhiv/PycharmProjects/yacht_shop/catalog/templates&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/ivakhiv/Downloads/aws-toolkit-jetbrains-1.66-223.zip",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings module-name="yacht_shop" is-module-sdk="true">
@@ -69,6 +81,7 @@
       <recent name="$PROJECT_DIR$/catalog/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/catalog/tests" />
       <recent name="$PROJECT_DIR$/catalog/templates/catalog" />
       <recent name="$PROJECT_DIR$/catalog/templates" />
@@ -82,55 +95,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Added MEDIA_URL and MEDIA_ROOT for media files like images.">
-      <created>1680022947152</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1680022947152</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added static setting to urlpattern.">
-      <created>1680023298945</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1680023298945</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added yacht_image as ImageField to store data about image url in database.">
-      <created>1680023570338</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1680023570338</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Installed Pillow package to work with images.">
-      <created>1680023680231</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1680023680231</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Migrations">
-      <created>1680024605537</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1680024605537</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Ignore image folder where the uploaded images are stored.">
-      <created>1680024640379</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1680024640379</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Commit">
-      <created>1680024649822</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1680024649822</updated>
     </task>
     <task id="LOCAL-00008" summary="HTML template">
       <created>1680030728333</created>
@@ -412,19 +376,73 @@
       <option name="project" value="LOCAL" />
       <updated>1681758686467</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Added function that will delete image from the folder after deletion from the database.">
+      <created>1682142099192</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1682142099192</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Implement __str__() method for Cart model and CartLineItem model. Added function for CartLineItem model that can calc total price of the item in tha cart.">
+      <created>1682142218641</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1682142218641</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Added path for cart.html">
+      <created>1682142243472</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1682142243473</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Created CardDetailView class. Overrided 'get_context_data' that returns 'cart_items' and 'final_price'.">
+      <created>1682142369749</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1682142369749</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Added Cart and CartLineItem model to admin.py">
+      <created>1682142406788</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1682142406788</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Added blockes 'cart_user' to have possibility modify cart and user nav-icons. Also added 'more_js' block.">
+      <created>1682142518112</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1682142518112</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Created simple cart page. More to be modified.">
+      <created>1682142562211</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1682142562211</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Minor charges implementing new block 'more_js' and else.">
+      <created>1682142665285</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1682142665285</updated>
+    </task>
+    <task id="LOCAL-00056" summary="HZ">
+      <created>1682142677271</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1682142677271</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added path for shop page with full list of yachts and page with full details of the yacht." />
-    <MESSAGE value="Modified Yacht List View to represent different categories of yachts in sidebar." />
-    <MESSAGE value="Modified page so that all detail data about the yacht is showen properly." />
-    <MESSAGE value="I don't know what django did here." />
-    <MESSAGE value="Created folder with tests." />
-    <MESSAGE value="No forms to test yet." />
-    <MESSAGE value="First tests for models. Basically only for Yacht model." />
-    <MESSAGE value="First tests for views. Common tests for YachtListView as per Tutorial." />
-    <MESSAGE value="Renamed as test_models.py and moved to test folder." />
     <MESSAGE value="Implemented the ability to sort the shop page by category by adding a query parameter in the URL - ChatGPT" />
     <MESSAGE value="Turned categories in the sidebar into links to /catalog/yachts/?category={id}" />
     <MESSAGE value="Fix problem with lints for images in carousel." />
@@ -441,6 +459,15 @@
     <MESSAGE value="Installed django-debug-toolbar" />
     <MESSAGE value="Passed Category objects to YachtListView for shop.html" />
     <MESSAGE value="Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+    <MESSAGE value="Added function that will delete image from the folder after deletion from the database." />
+    <MESSAGE value="Implement __str__() method for Cart model and CartLineItem model. Added function for CartLineItem model that can calc total price of the item in tha cart." />
+    <MESSAGE value="Added path for cart.html" />
+    <MESSAGE value="Created CardDetailView class. Overrided 'get_context_data' that returns 'cart_items' and 'final_price'." />
+    <MESSAGE value="Added Cart and CartLineItem model to admin.py" />
+    <MESSAGE value="Added blockes 'cart_user' to have possibility modify cart and user nav-icons. Also added 'more_js' block." />
+    <MESSAGE value="Created simple cart page. More to be modified." />
+    <MESSAGE value="Minor charges implementing new block 'more_js' and else." />
+    <MESSAGE value="HZ" />
+    <option name="LAST_COMMIT_MESSAGE" value="HZ" />
   </component>
 </project>
