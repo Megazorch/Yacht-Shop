@@ -81,7 +81,10 @@ class CartDetailView(generic.DetailView):
     def get_context_data(self, **kwargs):       # ChatGPT
         context = super().get_context_data(**kwargs)
         final_price = 0
-        cart_items = CartLineItem.objects.filter(cart=2)
+        cart_id = self.kwargs['pk']
+        # Get the cart items and calculate the final price
+        id = Cart.objects.get(pk=cart_id)
+        cart_items = CartLineItem.objects.filter(cart=id)
 
         for item in cart_items:
             final_price += item.total_price()
