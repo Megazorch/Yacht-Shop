@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+
+{% block one %}
+
+<style>
+div.user-card {
+  width: 350px;
+  margin: auto;
+  padding: 25px 0px 20px 0px;
+  text-align: center;
+}
+</style>
+
+<div class="user-card">
+    <p>Logged out!</p>
+    <a href="{% url 'login'%}">Click here to login again.</a>
+</div>
+
+{% endblock one %}
