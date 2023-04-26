@@ -98,6 +98,14 @@ https://templatemo.com/tm-559-zay-shop
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
                     </a>
+
+                    {% if user.is_authenticated %}
+                     <span style="margin:15px;">User: <strong>{{ user.get_username }}</strong></span>
+                     <span><a href="{% url 'logout' %}?next={{ request.path }}">Logout</a></span>
+                   {% else %}
+                     <span><a href="{% url 'login' %}?next={{ request.path }}">Login</a></span>
+                   {% endif %}
+
                     {% endblock cart_user %}
                 </div>
             </div>
