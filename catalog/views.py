@@ -1,8 +1,8 @@
-from django.db.models import Q
-from django.http import request
-from django.shortcuts import render
 from .models import *
 from django.views import generic
+from django.shortcuts import render, redirect
+from django.views import View
+from .forms import AddToCartForm
 
 
 def index(request):
@@ -24,7 +24,6 @@ def index(request):
 class YachtListView(generic.ListView):
     model = Yacht
     template_name = 'shop.html'  # Specify your own template name/location
-    #context_object_name = 'yachts'
 
     def get_queryset(self):     # ChatGPT
         queryset = super().get_queryset()
@@ -40,9 +39,39 @@ class YachtListView(generic.ListView):
         context['categories'] = Category.objects.all()
         return context
 
-class YachtDetailView(generic.DetailView):
-    model = Yacht
-    template_name = 'yacht-detail.html'
+
+class YachtDetailView(View):
+    def get(self, request, pk):
+        yacht = Yacht.objects.get(pk=pk)
+        form = AddToCartForm()
+        return render(request, 'yacht-detail.html', {'yacht': yacht, 'form': form})
+
+    def post(self, request, pk):
+        yacht = Yacht.objects.get(pk=pk)
+        form = AddToCartForm(request.POST)
+        if form.is_valid():
+            quantity = form.cleaned_data['quantity']
+            # Perform necessary actions to add yacht to cart
+            # For example, create or update Cart and CartItem objects
+            # based on the selected quantity and yacht details
+
+            # Get the user's cart, or create a new one if it doesn't exist
+            cart, created = Cart.objects.get_or_create(user=request.user)
+
+            # Check if the yacht is already in the cart
+            try:
+                cart_item = CartLineItem.objects.get(cart=cart, yacht=yacht)
+                cart_item.quantity += quantity  # Update quantity if yacht already exists
+                cart_item.save()
+            except CartLineItem.DoesNotExist:
+                cart_item = CartLineItem(cart=cart, yacht=yacht, quantity=quantity)
+                cart_item.save()
+
+            cart_path = 'cart/' + str(cart.id)
+
+            return redirect(cart_path)  # Redirect to cart view
+        else:
+            return render(request, 'yacht-detail.html', {'yacht': yacht, 'form': form})
 
 
 class CartDetailView(generic.DetailView):
@@ -60,3 +89,4 @@ class CartDetailView(generic.DetailView):
         context['cart_items'] = cart_items
         context['final_price'] = final_price
         return context
+
