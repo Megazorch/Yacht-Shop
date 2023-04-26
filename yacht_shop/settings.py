@@ -29,6 +29,8 @@ DEBUG = env("DEBUG")
 
 ALLOWED_HOSTS = []
 
+# Redirect to home URL after login (Default redirects to /accounts/profile/)
+LOGIN_REDIRECT_URL = '/'
 
 # Application definition
 
@@ -62,7 +64,7 @@ INTERNAL_IPS = ['127.0.0.1', 'localhost']
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
