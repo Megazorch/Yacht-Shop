@@ -1,7 +1,7 @@
 from django.db import models
 from djmoney.models.fields import MoneyField
 from django.urls import reverse  # Used to generate URLs by reversing the URL patterns
-import os
+from django.contrib.auth.models import User
 from django.core.files.storage import default_storage
 
 
@@ -105,7 +105,8 @@ class Yacht(models.Model):
 
 class Image(models.Model):
     image = models.ImageField(upload_to='images/')
-    #yacht = models.ForeignKey(Yacht, null=True, blank=True, on_delete=models.CASCADE)
+
+    # yacht = models.ForeignKey(Yacht, null=True, blank=True, on_delete=models.CASCADE)
 
     class Meta:
         ordering = ['image']
@@ -204,8 +205,13 @@ class Specifications(models.Model):
 
 
 class Cart(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, default=None, null=True, blank=True)
+
+    class Meta:
+        ordering = ['id']
+
     def __str__(self):
-        return f'Cart #{self.id}'
+        return f'Cart #{self.id} - {self.user}'
 
 
 class CartLineItem(models.Model):
