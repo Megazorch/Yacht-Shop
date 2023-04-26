@@ -217,7 +217,7 @@ class Cart(models.Model):
 class CartLineItem(models.Model):
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE, help_text='Choose Cart id.')
     yacht = models.ForeignKey(Yacht, on_delete=models.CASCADE, help_text='Choose Yacht id.')
-    count = models.PositiveIntegerField(help_text='Enter number of items.')
+    quantity = models.PositiveIntegerField(help_text='Enter number of items.')
 
     class Meta:
         ordering = ['id']
@@ -227,7 +227,7 @@ class CartLineItem(models.Model):
         return reverse('cart-detail', args=[str(self.id)])
 
     def __str__(self):
-        return f'{self.cart} - {self.yacht} - {self.count} pcs.'
+        return f'{self.cart} - {self.yacht} - {self.quantity} pcs.'
 
     def total_price(self):
-        return self.yacht.price * self.count
+        return self.yacht.price * self.quantity
