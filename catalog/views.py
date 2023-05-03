@@ -2,7 +2,7 @@ from .models import *
 from django.views import generic
 from django.shortcuts import render, redirect
 from django.views import View
-from .forms import AddToCartForm
+from .forms import *
 
 
 def index(request):
@@ -41,12 +41,14 @@ class YachtListView(generic.ListView):
 
 
 class YachtDetailView(View):
-    def get(self, request, pk):
+    @staticmethod
+    def get(request, pk):
         yacht = Yacht.objects.get(pk=pk)
         form = AddToCartForm()
         return render(request, 'yacht-detail.html', {'yacht': yacht, 'form': form})
 
-    def post(self, request, pk):
+    @staticmethod
+    def post(request, pk):
         yacht = Yacht.objects.get(pk=pk)
         form = AddToCartForm(request.POST)
         if form.is_valid():
@@ -72,6 +74,11 @@ class YachtDetailView(View):
             return redirect(cart_path)  # Redirect to cart view
         else:
             return render(request, 'yacht-detail.html', {'yacht': yacht, 'form': form})
+
+    def get_context_data(self, **kwargs):       # ChatGPT
+        context = super().get_context_data(**kwargs)
+        context['categories'] = Category.objects.all()
+        return context
 
 
 class CartDetailView(generic.DetailView):
