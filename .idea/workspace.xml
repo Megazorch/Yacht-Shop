@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="HZ">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/logged_out.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_form.html" afterDir="false" />
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="What is this?">
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/widgets/quantity_input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/yacht-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/yacht-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yacht_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yacht_shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/ivakhiv/Downloads/aws-toolkit-jetbrains-1.66-223.zip",
+    "last_opened_file_path": "/home/ivakhiv/PycharmProjects/yacht_shop/templates",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -78,13 +71,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/catalog/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/catalog/templates" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/catalog/tests" />
       <recent name="$PROJECT_DIR$/catalog/templates/catalog" />
-      <recent name="$PROJECT_DIR$/catalog/templates" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -95,153 +89,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00008" summary="HTML template">
-      <created>1680030728333</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1680030728333</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Created urlpatterns to generate an index page.">
-      <created>1680030816306</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1680030816306</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Created views to generate an index page.">
-      <created>1680030869532</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1680030869532</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Created basic html file which I will modify in other templates.">
-      <created>1680287808160</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1680287808160</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Modified some models to fix some errors.">
-      <created>1680288144794</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1680288144794</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Added path to shop.html">
-      <created>1680288168147</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1680288168147</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Added simple views to render shop.html">
-      <created>1680288295350</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1680288295350</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Add &quot;Category&quot; to admin.py">
-      <created>1680931187780</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1680931187780</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Fix problem with loading of JS.">
-      <created>1680931239085</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1680931239085</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Rename block reference to fix a bug.">
-      <created>1680931354983</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1680931354983</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Added model &quot;Category&quot;; added column 'category' to Yacht model as ManyToManyField; added function to represent all fields in huma-readable stile; added same function for &quot;Specifications&quot; model.">
-      <created>1680931612767</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1680931612767</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Added categories in sidebar. Links does not work, yet.">
-      <created>1680931708282</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1680931708282</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Added path for shop page with full list of yachts and page with full details of the yacht.">
-      <created>1680931803842</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1680931803842</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Modified Yacht List View to represent different categories of yachts in sidebar.">
-      <created>1680931858263</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1680931858263</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Modified page so that all detail data about the yacht is showen properly.">
-      <created>1680931937651</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1680931937651</updated>
-    </task>
-    <task id="LOCAL-00023" summary="I don't know what django did here.">
-      <created>1680931971657</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1680931971657</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Created folder with tests.">
-      <created>1681242831732</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1681242831733</updated>
-    </task>
-    <task id="LOCAL-00025" summary="No forms to test yet.">
-      <created>1681242864861</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1681242864861</updated>
-    </task>
-    <task id="LOCAL-00026" summary="First tests for models. Basically only for Yacht model.">
-      <created>1681242981692</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1681242981692</updated>
-    </task>
-    <task id="LOCAL-00027" summary="First tests for views. Common tests for YachtListView as per Tutorial.">
-      <created>1681243033382</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1681243033382</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Renamed as test_models.py and moved to test folder.">
-      <created>1681243092805</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1681243092805</updated>
     </task>
     <task id="LOCAL-00029" summary="Implemented the ability to sort the shop page by category by adding a query parameter in the URL - ChatGPT">
       <created>1681498213995</created>
@@ -439,35 +286,182 @@
       <option name="project" value="LOCAL" />
       <updated>1682142677271</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Imported django user model. Connected Cart Model with User Model to implement search of cart by user.">
+      <created>1682526263179</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1682526263179</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Rename column 'count' to 'quantity' for better readability of code.">
+      <created>1682526369190</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1682526369190</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Rewrite the path for the first image of yacht as yachts now can have more than one image.">
+      <created>1682526474986</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1682526474987</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Rewrite redirect url when pressing on Logo.">
+      <created>1682526563895</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1682526563895</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Added 'User' and 'Login/Logout' to nav-bar so that I can see whom I am logged in.">
+      <created>1682526728831</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1682526728831</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Refactor reference of cart item to a new name of 'quantity' column.">
+      <created>1682526795676</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1682526795677</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Added redirection to the home URL after login.">
+      <created>1682526845139</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1682526845139</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Refactor path for specific cart.">
+      <created>1682526888797</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1682526888797</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Added path for build-in django authentication system.">
+      <created>1682526930238</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1682526930238</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Totally refactor the YachtDetailView with the help of ChatGPT so that item would be added to cart or there will be created a new cart if not existing for each user.">
+      <created>1682527153777</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1682527153777</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Refactor function so that a certain cart would be rendered for a certain user.">
+      <created>1682527247792</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1682527247792</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Refactor form using django form model. Refactor Category representation.">
+      <created>1682527419275</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1682527419276</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Created django form for yacht-detail.html">
+      <created>1682527466595</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1682527466595</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Created log out page.">
+      <created>1682527490950</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1682527490951</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Created log in page.">
+      <created>1682527498805</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1682527498805</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Created password reset form html.">
+      <created>1682527528206</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1682527528206</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Created password reset email html.">
+      <created>1682527538099</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1682527538099</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Created password reset done html.">
+      <created>1682527556734</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1682527556734</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Created password reset confirmation html.">
+      <created>1682527570323</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1682527570323</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Comment">
+      <created>1682527579356</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1682527579356</updated>
+    </task>
+    <task id="LOCAL-00077" summary="What is this?">
+      <created>1682527610086</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1682527610086</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented the ability to sort the shop page by category by adding a query parameter in the URL - ChatGPT" />
-    <MESSAGE value="Turned categories in the sidebar into links to /catalog/yachts/?category={id}" />
-    <MESSAGE value="Fix problem with lints for images in carousel." />
-    <MESSAGE value="Created test of view. (Not finished)" />
-    <MESSAGE value="Added Image unit to admin site." />
-    <MESSAGE value="Added ordering for Broker unit. Created Image unit and alter yacht_image object from Foreign Key to ManyToMany." />
-    <MESSAGE value="Used Django template tags to parse first image for each yacht instance." />
-    <MESSAGE value="Don't know what is it." />
-    <MESSAGE value="Totally refactored carousel. Now for loop creates 3 slides with 3 images of yacht." />
-    <MESSAGE value="Add ordering by 'id' for categories." />
-    <MESSAGE value="Created Cart and CartLineItem instances for future Cart page." />
-    <MESSAGE value="Installed django-debug-toolbar and setuped django site." />
-    <MESSAGE value="Made categories appear from Category instance, not hardcoded." />
-    <MESSAGE value="Installed django-debug-toolbar" />
-    <MESSAGE value="Passed Category objects to YachtListView for shop.html" />
-    <MESSAGE value="Commit" />
-    <MESSAGE value="Added function that will delete image from the folder after deletion from the database." />
-    <MESSAGE value="Implement __str__() method for Cart model and CartLineItem model. Added function for CartLineItem model that can calc total price of the item in tha cart." />
-    <MESSAGE value="Added path for cart.html" />
-    <MESSAGE value="Created CardDetailView class. Overrided 'get_context_data' that returns 'cart_items' and 'final_price'." />
-    <MESSAGE value="Added Cart and CartLineItem model to admin.py" />
     <MESSAGE value="Added blockes 'cart_user' to have possibility modify cart and user nav-icons. Also added 'more_js' block." />
     <MESSAGE value="Created simple cart page. More to be modified." />
     <MESSAGE value="Minor charges implementing new block 'more_js' and else." />
     <MESSAGE value="HZ" />
-    <option name="LAST_COMMIT_MESSAGE" value="HZ" />
+    <MESSAGE value="Imported django user model. Connected Cart Model with User Model to implement search of cart by user." />
+    <MESSAGE value="Rename column 'count' to 'quantity' for better readability of code." />
+    <MESSAGE value="Rewrite the path for the first image of yacht as yachts now can have more than one image." />
+    <MESSAGE value="Rewrite redirect url when pressing on Logo." />
+    <MESSAGE value="Added 'User' and 'Login/Logout' to nav-bar so that I can see whom I am logged in." />
+    <MESSAGE value="Refactor reference of cart item to a new name of 'quantity' column." />
+    <MESSAGE value="Added redirection to the home URL after login." />
+    <MESSAGE value="Refactor path for specific cart." />
+    <MESSAGE value="Added path for build-in django authentication system." />
+    <MESSAGE value="Totally refactor the YachtDetailView with the help of ChatGPT so that item would be added to cart or there will be created a new cart if not existing for each user." />
+    <MESSAGE value="Refactor function so that a certain cart would be rendered for a certain user." />
+    <MESSAGE value="Refactor form using django form model. Refactor Category representation." />
+    <MESSAGE value="Created django form for yacht-detail.html" />
+    <MESSAGE value="Created log out page." />
+    <MESSAGE value="Created log in page." />
+    <MESSAGE value="Created password reset form html." />
+    <MESSAGE value="Created password reset email html." />
+    <MESSAGE value="Created password reset done html." />
+    <MESSAGE value="Created password reset confirmation html." />
+    <MESSAGE value="Comment" />
+    <MESSAGE value="What is this?" />
+    <option name="LAST_COMMIT_MESSAGE" value="What is this?" />
   </component>
 </project>
