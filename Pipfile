@@ -11,6 +11,7 @@ psycopg2-binary = "*"
 django-money = "*"
 pillow = "*"
 django-debug-toolbar = "*"
+djangorestframework = "*"
 
 [dev-packages]
 
