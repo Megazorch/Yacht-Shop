@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'djmoney',
     'catalog.apps.CatalogConfig',
     'debug_toolbar',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
