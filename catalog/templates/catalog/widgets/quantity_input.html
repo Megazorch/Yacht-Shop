@@ -1,0 +1,61 @@
+{% load static %}
+
+<div class="col-auto">
+    <ul class="list-inline pb-3">
+        <li class="list-inline-item text-right">
+
+            <!--<input type="hidden" name="product-quanity" id="product-quanity" value="1">-->
+            <input type="{{ widget.input_type }}" name="{{ widget.name }}" value="{{ widget.value|default:'' }}"
+           min="{{ widget.min_value }}" max="{{ widget.max_value }}" step="{{ widget.step }}"
+           class="form-control input-number" id="{{ widget.id }}" {% include "django/forms/widgets/attrs.html" %}>
+        </li>
+        <li class="list-inline-item"><span class="btn btn-success" id="btn-minus">-</span></li>
+        <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
+        <li class="list-inline-item"><span class="btn btn-success" id="btn-plus">+</span></li>
+    </ul>
+</div>
+
+<!--
+<div class="input-group">
+    <span class="input-group-btn">
+        <button type="button" class="btn btn-default btn-number" data-type="minus" data-field="{{ widget.name }}">
+            <span class="glyphicon glyphicon-minus"></span>
+        </button>
+    </span>
+    <input type="{{ widget.input_type }}" name="{{ widget.name }}" value="{{ widget.value|default:'' }}"
+           min="{{ widget.min_value }}" max="{{ widget.max_value }}" step="{{ widget.step }}"
+           class="form-control input-number" id="{{ widget.id }}" {% include "django/forms/widgets/attrs.html" %}>
+    <span class="input-group-btn">
+        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="{{ widget.name }}">
+            <span class="glyphicon glyphicon-plus"></span>
+        </button>
+    </span>
+</div>
+-->
+
+<script>
+$(function() {
+    $('.btn-number').click(function(e) {
+        e.preventDefault();
+        
+        var fieldName = $(this).attr('data-field');
+        var type = $(this).attr('data-type');
+        var input = $('input[name="' + fieldName + '"]');
+        var currentVal = parseInt(input.val());
+        
+        if (!isNaN(currentVal)) {
+            if (type == 'minus') {
+                if (currentVal > input.attr('min')) {
+                    input.val(currentVal - 1).change();
+                }
+            } else if (type == 'plus') {
+                if (currentVal < input.attr('max')) {
+                    input.val(currentVal + 1).change();
+                }
+            }
+        } else {
+            input.val(0);
+        }
+    });
+});
+</script>
