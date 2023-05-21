@@ -72,7 +72,7 @@ class YachtDetailView(View):
                 cart_item.quantity += quantity  # Update quantity if yacht already exists
                 cart_item.save()
             except CartLineItem.DoesNotExist:
-                cart_item = CartLineItem(cart=cart, yacht=yacht, quantity=quantity)
+                cart_item = CartLineItem(cart=cart, yacht=yacht, quantity=quantity, owner=request.user)
                 cart_item.save()
 
             cart_path = 'cart/' + str(cart.id)
