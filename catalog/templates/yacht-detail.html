@@ -123,9 +123,11 @@
                                             Quantity
                                             {% csrf_token %}
                                             {{ form.as_ul }}
-                                            <li class="list-inline-item"><span class="btn btn-success" id="btn-minus">-</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success" id="btn-minus"
+                                                                            onclick="decreaseQuantityDisplay()">-</span></li>
                                             <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                            <li class="list-inline-item"><span class="btn btn-success" id="btn-plus">+</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success" id="btn-plus"
+                                                                            onclick="increaseQuantityDisplay()">+</span></li>
                                         </ul>
                                     </div>
 
@@ -174,6 +176,23 @@
                 }
             ]
         });
+    </script>
+    <script>
+        function increaseQuantityDisplay() {
+          var quantityDisplay = document.getElementById('var-value');
+          var currentQuantity = parseInt(quantityDisplay.textContent);
+          currentQuantity = currentQuantity + 1;
+          document.getElementById("product-quantity").value = currentQuantity;
+        }
+
+        function decreaseQuantityDisplay() {
+          var quantityDisplay = document.getElementById('var-value');
+          var currentQuantity = parseInt(quantityDisplay.textContent);
+          if (currentQuantity > 1) {
+            currentQuantity = currentQuantity - 1;
+          }
+          document.getElementById("product-quantity").value = currentQuantity;
+        }
     </script>
     <!-- End Slider Script -->
     {% endblock more_js %}
