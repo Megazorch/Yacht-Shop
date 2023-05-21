@@ -11,15 +11,12 @@
     <section class="bg-light">
         <div class="container pb-5">
             <div class="row">
-                <div class="col-lg-5 mt-5">
-                <h6>Тут буде список подібних товарів для покупки.</h6>
-                </div>
                 <!-- col end -->
-                <div class="col-lg-7 mt-5">
+                <!--col-lg-7 mt-5-->
+                <div class="my-class" style="margin-top: 25px;">
                     <div class="card">
-                        <div class="card-body"">
+                        <div class="card-body">
                             <h1 class="h2">{{ cart }}</h1>
-                            <p class="list-inline-item">User: треба додати фото яхт...</p>
                             <table style="font-size: 15px; width: 100%; border-collapse: collapse;">
                                 <tr>
                                     <th style="border: 1px solid black; padding: 8px; text-align: center;">№</th>
@@ -30,10 +27,26 @@
                                 </tr>
                                 {% for item in cart_items %}
                                 <tr>
-                                    <td style="border: 1px solid black; padding: 8px; text-align: center;">{{ forloop.counter }}</td>
+                                    <td style="border: 1px solid black; padding: 8px; text-align: center;">{{ forloop.counter }}
+                                        <span style="display: none;" id="cartlineitem-id">{{ item.id }}</span></td>
                                     <td style="border: 1px solid black; padding: 8px; text-align: center;">{{ item.yacht }}</td>
                                     <td style="border: 1px solid black; padding: 8px; text-align: center;">{{ item.yacht.price }}</td>
-                                    <td style="border: 1px solid black; padding: 8px; text-align: center;">{{ item.quantity }}</td>
+                                    <td style="border: 1px solid black; padding: 8px; text-align: center;">
+                                        <form method="post">
+                                        <div class="col-auto">
+                                                <ul class="list-inline pb-3" style="margin: 0px; padding: 0px">
+                                                    {% csrf_token %}
+                                                    {{ form }}
+                                                    <li class="list-inline-item"><span class="btn btn-success"
+                                                                                       onclick="decreaseQuantity({{ item.id }}, {{ item.quantity }})"
+                                                                                       id="btn-minus">-</span></li>
+                                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">{{ item.quantity }}</span></li>
+                                                    <li class="list-inline-item"><span class="btn btn-success"
+                                                                                       onclick="increaseQuantity({{ item.id }}, {{ item.quantity }})"
+                                                                                       id="btn-plus">+</span></li>
+                                                </ul>
+                                            </div>
+                                        </form><span style="display: none" id="var-value-my">{{ item.quantity }}</span></td>
                                     <td style="border: 1px solid black; padding: 8px; text-align: center;">{{ item.total_price }}</td>
                                 </tr>
                                 {% endfor %}
