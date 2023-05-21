@@ -7,23 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/catalog/permissions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/static/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/static/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/yacht-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/yacht-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yacht_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yacht_shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,104 +82,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Installed django-debug-toolbar">
-      <created>1681758195428</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1681758195428</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Installed django-debug-toolbar and setuped django site.">
-      <created>1681758228260</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1681758228260</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Made categories appear from Category instance, not hardcoded.">
-      <created>1681758310692</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1681758310692</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Installed django-debug-toolbar">
-      <created>1681758330352</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1681758330352</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Passed Category objects to YachtListView for shop.html">
-      <created>1681758371060</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1681758371060</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Commit">
-      <created>1681758382783</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1681758382783</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Commit">
-      <created>1681758686467</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1681758686467</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Added function that will delete image from the folder after deletion from the database.">
-      <created>1682142099192</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1682142099192</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Implement __str__() method for Cart model and CartLineItem model. Added function for CartLineItem model that can calc total price of the item in tha cart.">
-      <created>1682142218641</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1682142218641</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Added path for cart.html">
-      <created>1682142243472</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1682142243473</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Created CardDetailView class. Overrided 'get_context_data' that returns 'cart_items' and 'final_price'.">
-      <created>1682142369749</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1682142369749</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Added Cart and CartLineItem model to admin.py">
-      <created>1682142406788</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1682142406788</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Added blockes 'cart_user' to have possibility modify cart and user nav-icons. Also added 'more_js' block.">
-      <created>1682142518112</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1682142518112</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Created simple cart page. More to be modified.">
-      <created>1682142562211</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1682142562211</updated>
     </task>
     <task id="LOCAL-00055" summary="Minor charges implementing new block 'more_js' and else.">
       <created>1682142665285</created>
@@ -440,23 +328,108 @@
       <option name="project" value="LOCAL" />
       <updated>1683133922052</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Installed 'httpie' - didn't help.">
+      <created>1684653186151</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1684653186152</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Added REST_FRAMEWORK settings.">
+      <created>1684653230365</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1684653230365</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Created serializer for REST API framework.">
+      <created>1684653270995</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1684653270995</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Created permissions as per tutorial for serializers.">
+      <created>1684653315143</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1684653315143</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Added two columns for REST API framework.">
+      <created>1684653399023</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1684653399023</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Modified attributes of form for proper work of JavaScript.">
+      <created>1684653443021</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1684653443021</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Added path for REST API framework.">
+      <created>1684653465543</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1684653465543</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Created view for REST API framework.">
+      <created>1684653510974</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1684653510974</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Modified 'plus' and 'minus' button for correct JavaScript response.">
+      <created>1684653566863</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1684653566864</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Created JS to sent AJAX to my REST API.">
+      <created>1684653608290</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1684653608290</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Modified cart by adding 'plus' and 'minus' buttons with new JS code that send AJAX to REST API.">
+      <created>1684653668929</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1684653668930</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Modified .pb-3 padding by deleting '!important' to have possibility to modify it.">
+      <created>1684653733571</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1684653733571</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Comment">
+      <created>1684653744296</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1684653744296</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Comment">
+      <created>1684653746438</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1684653746438</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added path for build-in django authentication system." />
-    <MESSAGE value="Totally refactor the YachtDetailView with the help of ChatGPT so that item would be added to cart or there will be created a new cart if not existing for each user." />
-    <MESSAGE value="Refactor function so that a certain cart would be rendered for a certain user." />
-    <MESSAGE value="Refactor form using django form model. Refactor Category representation." />
-    <MESSAGE value="Created django form for yacht-detail.html" />
-    <MESSAGE value="Created log out page." />
-    <MESSAGE value="Created log in page." />
-    <MESSAGE value="Created password reset form html." />
-    <MESSAGE value="Created password reset email html." />
-    <MESSAGE value="Created password reset done html." />
-    <MESSAGE value="Created password reset confirmation html." />
-    <MESSAGE value="Comment" />
-    <MESSAGE value="What is this?" />
     <MESSAGE value="Refactored form by adding plus and minus buttons." />
     <MESSAGE value="Created a new widget to modify form representation. Not successfully." />
     <MESSAGE value="Tried to add Categories. Not successfully." />
@@ -469,6 +442,19 @@
     <MESSAGE value="Added 'rest_framework' to my INSTALLED_APPS setting." />
     <MESSAGE value="Installed 'djangorestframework' for REST API." />
     <MESSAGE value="Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+    <MESSAGE value="Installed 'httpie' - didn't help." />
+    <MESSAGE value="Added REST_FRAMEWORK settings." />
+    <MESSAGE value="Created serializer for REST API framework." />
+    <MESSAGE value="Created permissions as per tutorial for serializers." />
+    <MESSAGE value="Added two columns for REST API framework." />
+    <MESSAGE value="Modified attributes of form for proper work of JavaScript." />
+    <MESSAGE value="Added path for REST API framework." />
+    <MESSAGE value="Created view for REST API framework." />
+    <MESSAGE value="Modified 'plus' and 'minus' button for correct JavaScript response." />
+    <MESSAGE value="Created JS to sent AJAX to my REST API." />
+    <MESSAGE value="Modified cart by adding 'plus' and 'minus' buttons with new JS code that send AJAX to REST API." />
+    <MESSAGE value="Modified .pb-3 padding by deleting '!important' to have possibility to modify it." />
+    <MESSAGE value="Comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comment" />
   </component>
 </project>
