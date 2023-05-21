@@ -218,6 +218,8 @@ class CartLineItem(models.Model):
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE, help_text='Choose Cart id.')
     yacht = models.ForeignKey(Yacht, on_delete=models.CASCADE, help_text='Choose Yacht id.')
     quantity = models.PositiveIntegerField(help_text='Enter number of items.')
+    owner = models.ForeignKey('auth.User', related_name='carts', on_delete=models.CASCADE, default='1')
+    highlighted = models.TextField(null=True, blank=True)
 
     class Meta:
         ordering = ['id']
