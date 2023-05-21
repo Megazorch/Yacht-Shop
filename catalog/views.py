@@ -3,6 +3,12 @@ from django.views import generic
 from django.shortcuts import render, redirect
 from django.views import View
 from .forms import *
+from catalog.models import CartLineItem
+from catalog.serializers import *
+from rest_framework import generics
+from django.contrib.auth.models import User
+
+from .permissions import IsOwnerOrReadOnly
 
 
 def index(request):
@@ -83,6 +89,7 @@ class YachtDetailView(View):
 
 class CartDetailView(generic.DetailView):
     model = Cart
+    form = AddToCartForm()
     template_name = 'cart.html'
 
     def get_context_data(self, **kwargs):       # ChatGPT
@@ -100,3 +107,30 @@ class CartDetailView(generic.DetailView):
         context['final_price'] = final_price
         return context
 
+
+# SERIALIZERS
+from rest_framework import permissions
+
+
+class CartLineItemList(generics.ListCreateAPIView):
+    """
+    List all code cart line items, or create a new cart line item.
+    """
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    queryset = CartLineItem.objects.all()
+    serializer_class = CartLineItemSerializer
+
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)
+
+
+class CartLineItemDetail(generics.RetrieveUpdateDestroyAPIView):
+    """
+    Retrieve, update or delete a code cart line item.
+    """
+    queryset = CartLineItem.objects.all()
+    serializer_class = CartLineItemSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly,
+                          IsOwnerOrReadOnly]
+
+# END SERIALIZER
