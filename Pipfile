@@ -12,6 +12,7 @@ django-money = "*"
 pillow = "*"
 django-debug-toolbar = "*"
 djangorestframework = "*"
+httpie = "*"
 
 [dev-packages]
 
