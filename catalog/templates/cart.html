@@ -24,6 +24,7 @@
                                     <th style="border: 1px solid black; padding: 8px; text-align: center;">Price</th>
                                     <th style="border: 1px solid black; padding: 8px; text-align: center;">Quantity</th>
                                     <th style="border: 1px solid black; padding: 8px; text-align: center;">Total price</th>
+                                    <th></th>
                                 </tr>
                                 {% for item in cart_items %}
                                 <tr>
@@ -48,6 +49,8 @@
                                             </div>
                                         </form><span style="display: none" id="var-value-my">{{ item.quantity }}</span></td>
                                     <td style="border: 1px solid black; padding: 8px; text-align: center;">{{ item.total_price }}</td>
+                                    <td style="text-align: center;"><button class="btn btn-success delete-button"
+                                                data-line-item-id="{{ item.id }}">Delete</button></td>
                                 </tr>
                                 {% endfor %}
                             </table>
@@ -79,5 +82,5 @@
     {% endblock one %}
 
 </body>
-
+<a target="_blank" href="https://icons8.com/icon/99933/delete">Delete</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 </html>
