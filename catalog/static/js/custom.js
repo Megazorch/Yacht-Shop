@@ -58,3 +58,38 @@ function increaseQuantity(currentCartLineItemId, currentQuantity) {
   updateQuantity(currentCartLineItemId, newQuantity);
 }
 
+// Add event listener to delete button
+$('.delete-button').click(function() {
+  var lineItemId = $(this).data('line-item-id');
+  deleteCartLineItem(lineItemId);
+});
+
+// Function to send AJAX request to delete cart line item
+function deleteCartLineItem(lineItemId) {
+  // Create an XMLHttpRequest object
+  var xhr = new XMLHttpRequest();
+
+  // Set up the request
+  xhr.open('DELETE', '/catalog/cart-line-items/' + lineItemId + '/');
+
+  // Get the CSRF token from the cookie
+  var csrftoken = document.querySelector('input[name="csrfmiddlewaretoken"]').value;
+
+  // Set the CSRF token in the request header
+  xhr.setRequestHeader('X-CSRFToken', csrftoken);
+
+  // Set the callback function to handle the response
+  xhr.onload = function() {
+    if (xhr.status === 204) {
+      /// Reload the page after a short delay
+      setTimeout(function() {
+        location.reload();
+      }, 500); // Adjust the delay as needed
+    } else {
+      console.error('Request failed. Status: ' + xhr.status);
+    }
+  };
+
+  // Send the request
+  xhr.send();
+}
