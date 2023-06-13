@@ -6,7 +6,8 @@ from .forms import *
 from catalog.models import CartLineItem
 from catalog.serializers import *
 from rest_framework import generics
-from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserCreationForm
+from django.urls import reverse_lazy
 
 from .permissions import IsOwnerOrReadOnly
 
@@ -117,6 +118,12 @@ class CartDetailView(generic.DetailView):
         context['cart_items'] = cart_items
         context['final_price'] = final_price
         return context
+
+
+class SignUpView(generic.CreateView):
+    form_class = UserCreationForm
+    success_url = reverse_lazy("login")
+    template_name = "registration/sign-up.html"
 
 
 # SERIALIZERS
