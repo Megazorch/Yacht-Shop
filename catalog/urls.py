@@ -15,6 +15,9 @@ urlpatterns = [
     path('yachts/cart/<int:pk>', views.CartDetailView.as_view(), name='cart'),
     path('cart-line-items/', views.CartLineItemList.as_view()),
     path('cart-line-items/<int:pk>/', views.CartLineItemDetail.as_view()),
+    path("accounts/sign-up/", views.SignUpView.as_view(), name="sign-up"),
+    path('about/', views.AboutView.as_view(), name='about'),
+    path('contact/', views.ContactView.as_view(), name='contact'),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
