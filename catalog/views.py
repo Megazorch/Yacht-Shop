@@ -27,6 +27,14 @@ def index(request):
     return render(request, 'index.html', context=context)
 
 
+class AboutView(generic.TemplateView):
+    template_name = 'about.html'
+
+
+class ContactView(generic.TemplateView):
+    template_name = 'contact.html'
+
+
 class YachtListView(generic.ListView):
     model = Yacht
     template_name = 'shop.html'  # Specify your own template name/location
