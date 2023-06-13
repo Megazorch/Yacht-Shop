@@ -72,7 +72,10 @@ class YachtDetailView(View):
             # based on the selected quantity and yacht details
 
             # Get the user's cart, or create a new one if it doesn't exist
-            cart, created = Cart.objects.get_or_create(user=request.user)
+            if not request.user.is_authenticated:
+                return redirect('/accounts/login')
+            else:
+                cart, created = Cart.objects.get_or_create(user=request.user)
 
             # Check if the yacht is already in the cart
             try:
