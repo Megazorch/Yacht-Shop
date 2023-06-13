@@ -1,0 +1,36 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Sign Up</title>{% endblock %}
+
+{% block one %}
+<style>
+div.user-card {
+  width: 450px;
+  margin: auto;
+  padding: 25px 0px 20px 0px;
+  text-align: center;
+}
+
+span.helptext {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+}
+
+form li {
+  font-size: 12px !important;
+  text-align: left;
+}
+
+</style>
+  <div class="user-card">
+    <p>Sign Up</p>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <br>
+      <button type="submit" class="btn btn-success btn-lg" name="submit">Sign Up</button>
+    </form>
+  </div>
+
+{% endblock one %}
