@@ -7,16 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Added 'Delete' button for cart line item.">
-      <change afterPath="$PROJECT_DIR$/templates/registration/sign-up.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-    </list>
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Commit." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,76 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Rewrite redirect url when pressing on Logo.">
-      <created>1682526563895</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1682526563895</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Added 'User' and 'Login/Logout' to nav-bar so that I can see whom I am logged in.">
-      <created>1682526728831</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1682526728831</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Refactor reference of cart item to a new name of 'quantity' column.">
-      <created>1682526795676</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1682526795677</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Added redirection to the home URL after login.">
-      <created>1682526845139</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1682526845139</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Refactor path for specific cart.">
-      <created>1682526888797</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1682526888797</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Added path for build-in django authentication system.">
-      <created>1682526930238</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1682526930238</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Totally refactor the YachtDetailView with the help of ChatGPT so that item would be added to cart or there will be created a new cart if not existing for each user.">
-      <created>1682527153777</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1682527153777</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Refactor function so that a certain cart would be rendered for a certain user.">
-      <created>1682527247792</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1682527247792</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Refactor form using django form model. Refactor Category representation.">
-      <created>1682527419275</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1682527419276</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Created django form for yacht-detail.html">
-      <created>1682527466595</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1682527466595</updated>
     </task>
     <task id="LOCAL-00070" summary="Created log out page.">
       <created>1682527490950</created>
@@ -432,20 +353,80 @@
       <option name="project" value="LOCAL" />
       <updated>1685646744181</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Refactored 'about.html' template for my own use.">
+      <created>1686688699263</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1686688699264</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Refactored 'contact.html' template for my own use. Added map from scratch.">
+      <created>1686688742840</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1686688742840</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Modified by adding 'Sing Up' button.">
+      <created>1686688792131</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1686688792131</updated>
+    </task>
+    <task id="LOCAL-00112" summary="Created 'Sing Up' page by tutorial. Used build-in form for Sing Up.">
+      <created>1686688900945</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1686688900945</updated>
+    </task>
+    <task id="LOCAL-00113" summary="Modified with proper links.">
+      <created>1686688950431</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1686688950431</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Added paths for sing-up, about and contact pages.">
+      <created>1686688978096</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1686688978096</updated>
+    </task>
+    <task id="LOCAL-00115" summary="Created views for about and contact pages.">
+      <created>1686689033301</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1686689033301</updated>
+    </task>
+    <task id="LOCAL-00116" summary="Added check for authentication before proceeding to cart.">
+      <created>1686689163206</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1686689163206</updated>
+    </task>
+    <task id="LOCAL-00117" summary="Created view for Sing Up page.">
+      <created>1686689200963</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1686689200963</updated>
+    </task>
+    <task id="LOCAL-00118" summary="Commit.">
+      <created>1686689216510</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1686689216510</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added django forms to Installed Apps to use them in project." />
-    <MESSAGE value="Tried to create my own widget. Not successfully." />
-    <MESSAGE value="Refactored form by adding widget and attrs for it." />
-    <MESSAGE value="Added new block." />
-    <MESSAGE value="Comment." />
-    <MESSAGE value="Added REST framework's login and logout views." />
-    <MESSAGE value="Added 'rest_framework' to my INSTALLED_APPS setting." />
-    <MESSAGE value="Installed 'djangorestframework' for REST API." />
-    <MESSAGE value="Installed 'httpie' - didn't help." />
-    <MESSAGE value="Added REST_FRAMEWORK settings." />
     <MESSAGE value="Created serializer for REST API framework." />
     <MESSAGE value="Created permissions as per tutorial for serializers." />
     <MESSAGE value="Added two columns for REST API framework." />
@@ -461,6 +442,16 @@
     <MESSAGE value="Fixed bug that when created a new cart line item the owner is always admin." />
     <MESSAGE value="Commit" />
     <MESSAGE value="Added 'Delete' button for cart line item." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 'Delete' button for cart line item." />
+    <MESSAGE value="Refactored 'about.html' template for my own use." />
+    <MESSAGE value="Refactored 'contact.html' template for my own use. Added map from scratch." />
+    <MESSAGE value="Modified by adding 'Sing Up' button." />
+    <MESSAGE value="Created 'Sing Up' page by tutorial. Used build-in form for Sing Up." />
+    <MESSAGE value="Modified with proper links." />
+    <MESSAGE value="Added paths for sing-up, about and contact pages." />
+    <MESSAGE value="Created views for about and contact pages." />
+    <MESSAGE value="Added check for authentication before proceeding to cart." />
+    <MESSAGE value="Created view for Sing Up page." />
+    <MESSAGE value="Commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit." />
   </component>
 </project>
