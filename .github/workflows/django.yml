@@ -46,14 +46,9 @@ jobs:
           Pipfile.lock
     - name: Install pipenv
       run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
-    - run: pipenv install --deploy --dev
+    - run: pipenv install
+    - run: pipenv shell
     
     - name: Run Tests
       run: |
-        pipenv run test -svvv
-        env:
-          TEST_DB_HOST: localhost
-          TEST_DB_NAME: postgres
-          TEST_DB_PASS: postgres
-          TEST_DB_PORT: 5432
-          TEST_DB_USER: postgres
+        python manange.py test
