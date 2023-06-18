@@ -44,11 +44,13 @@ jobs:
         cache: 'pipenv'
         cache-dependency-path: |
           Pipfile.lock
+          
     - name: Install pipenv
       run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
+      
     - run: pipenv install
     
-    - name: Run Tests
+    - name: Connect to PostgreSQL
       env:
         DEBUG: True
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
@@ -57,6 +59,9 @@ jobs:
         DB_PASS: ${{ secrets.DB_PASS }}
         DB_HOST: localhost
         DB_PORT: 5432
+      run: psql -h DB_HOST -d DB_NAME -U DB_USER
+      
+    - name: Run Tests
       run: |
         pipenv run python3 manage.py test catalog.tests.test_models --verbosity 2
         pipenv run python3 manage.py test catalog.tests.test_views --verbosity 2
