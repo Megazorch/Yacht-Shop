@@ -51,9 +51,7 @@ jobs:
     - run: pipenv install
     
     - name: Connect to PostgreSQL
-      env:
-        DB_USER: ${{ secrets.DB_USER }}
-      run: sudo -u postgres DB_USER --interactive
+      run: sudo -u postgres ${{ secrets.DB_USER }} --interactive
       
     - name: Run Tests
       env:
