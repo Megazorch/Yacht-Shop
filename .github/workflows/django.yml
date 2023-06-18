@@ -51,7 +51,7 @@ jobs:
     - run: pipenv install
     
     - name: Connect to PostgreSQL
-      run: sudo -u postgres createuser --username=${{ secrets.DB_USER }} --password=${{ secrets.DB_PASS }}
+      run: sudo -u postgres createuser ${{ secrets.DB_USER }}
 
     - name: Run Tests
       env:
