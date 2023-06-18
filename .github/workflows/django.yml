@@ -49,9 +49,6 @@ jobs:
       run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
       
     - run: pipenv install
-    
-    - name: Connect to PostgreSQL
-      run: sudo -u postgres createuser ${{ secrets.DB_USER }}
 
     - name: Run Tests
       env:
