@@ -52,16 +52,18 @@ jobs:
     
     - name: Connect to PostgreSQL
       env:
-        DEBUG: True
-        SECRET_KEY: ${{ secrets.SECRET_KEY }}
-        DB_NAME: ${{ secrets.DB_NAME }}
         DB_USER: ${{ secrets.DB_USER }}
-        DB_PASS: ${{ secrets.DB_PASS }}
-        DB_HOST: localhost
-        DB_PORT: 5432
-      run: psql -h DB_HOST -d DB_NAME -U DB_USER
+      run: sudo -u postgres DB_USER --interactive
       
     - name: Run Tests
+      env:
+          DEBUG: True
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DB_PASS: ${{ secrets.DB_PASS }}
+          DB_HOST: localhost
+          DB_PORT: 5432
       run: |
         pipenv run python3 manage.py test catalog.tests.test_models --verbosity 2
         pipenv run python3 manage.py test catalog.tests.test_views --verbosity 2
