@@ -49,5 +49,13 @@ jobs:
     - run: pipenv install
     
     - name: Run Tests
+      env:
+        DEBUG=True
+        SECRET_KEY=${{ secrets.SECRET_KEY }}
+        DB_NAME=${{ secrets.DB_NAME }}
+        DB_USER=${{ secrets.DB_USER }}
+        DB_PASS=${{ secrets.DB_PASS }}
+        DB_HOST=localhost
+        DB_PORT=5432
       run: |
         pipenv run python manage.py test
