@@ -54,6 +54,7 @@ jobs:
       run: |
         pipenv run python manage.py test
       env:
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
         TEST_DB_HOST: localhost
         TEST_DB_NAME: postgres
         TEST_DB_PASS: postgres
