@@ -10,7 +10,7 @@ class YachtListViewTest(TestCase):
         Broker.objects.create(broker="Ivakhiv Yacht's Co.")
         broker = Broker.objects.get(id=1)
 
-        category = Category.objects.create(category="Power")
+        Category.objects.create(category="Power")
 
         yacht = Yacht.objects.create(
             price=1000000,

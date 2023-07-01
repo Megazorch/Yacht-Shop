@@ -137,7 +137,7 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATIC_ROOT = '' #/home/runner/work/Yacht-Shop/Yacht-Shop/static
+#STATIC_ROOT = '/home/runner/work/Yacht-Shop/Yacht-Shop/static'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
