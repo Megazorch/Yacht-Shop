@@ -52,7 +52,7 @@ jobs:
 
     - name: Run test suite
       run: |
-        pipenv run test -svvv
+        pipenv python manage.py test
       env:
         TEST_DB_HOST: localhost
         TEST_DB_NAME: postgres
