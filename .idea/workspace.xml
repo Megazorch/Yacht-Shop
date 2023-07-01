@@ -8,8 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Commit.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yacht_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,20 +81,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Created log in page.">
-      <created>1682527498805</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1682527498805</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Created password reset form html.">
-      <created>1682527528206</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1682527528206</updated>
     </task>
     <task id="LOCAL-00073" summary="Created password reset email html.">
       <created>1682527538099</created>
@@ -427,11 +411,24 @@
       <option name="project" value="LOCAL" />
       <updated>1686689240050</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="Added static root for GitActions.">
+      <created>1688224360853</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1688224360855</updated>
+    </task>
+    <task id="LOCAL-00121" summary="Commit.">
+      <created>1688224375018</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1688224375018</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created serializer for REST API framework." />
     <MESSAGE value="Created permissions as per tutorial for serializers." />
     <MESSAGE value="Added two columns for REST API framework." />
     <MESSAGE value="Modified attributes of form for proper work of JavaScript." />
@@ -455,6 +452,7 @@
     <MESSAGE value="Created views for about and contact pages." />
     <MESSAGE value="Added check for authentication before proceeding to cart." />
     <MESSAGE value="Created view for Sing Up page." />
+    <MESSAGE value="Added static root for GitActions." />
     <MESSAGE value="Commit." />
     <option name="LAST_COMMIT_MESSAGE" value="Commit." />
   </component>
