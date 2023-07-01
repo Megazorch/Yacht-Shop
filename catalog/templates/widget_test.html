@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block one %}
+<div class="card-body">
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit" class="btn btn-success btn-lg" name="submit" value="addtocard">Add To Cart</button>
+</form>
+</div>
+{% endblock one %}

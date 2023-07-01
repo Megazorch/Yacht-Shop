@@ -7,11 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Commit.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yacht_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Fixed test bags." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,13 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Created password reset done html.">
-      <created>1682527556734</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1682527556734</updated>
     </task>
     <task id="LOCAL-00075" summary="Created password reset confirmation html.">
       <created>1682527570323</created>
@@ -427,11 +416,17 @@
       <option name="project" value="LOCAL" />
       <updated>1688224631586</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="Fixed test bags.">
+      <created>1688226476897</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1688226476898</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created permissions as per tutorial for serializers." />
     <MESSAGE value="Added two columns for REST API framework." />
     <MESSAGE value="Modified attributes of form for proper work of JavaScript." />
     <MESSAGE value="Added path for REST API framework." />
@@ -456,6 +451,7 @@
     <MESSAGE value="Created view for Sing Up page." />
     <MESSAGE value="Added static root for GitActions." />
     <MESSAGE value="Commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit." />
+    <MESSAGE value="Fixed test bags." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed test bags." />
   </component>
 </project>
