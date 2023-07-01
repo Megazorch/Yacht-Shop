@@ -1,0 +1,65 @@
+name: Django Run Tests
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    services:
+      db_service:
+        image: postgres
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: postgres
+          POSTGRES_PASSWORD: postgres
+        # Set health checks to wait until postgres has started
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          # Maps tcp port 5432 on service container to the host
+          - 5432:5432
+    strategy:
+      max-parallel: 4
+      matrix:
+        python-version: [3.11.2]
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v3
+      
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11.2'
+        cache: 'pipenv'
+        cache-dependency-path: |
+          Pipfile.lock
+          
+    - name: Install pipenv
+      run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
+      
+    - run: pipenv install
+          
+    - name: Run test suite
+      run: |
+        mkdir /home/runner/work/Yacht-Shop/Yacht-Shop/static
+        pipenv run python manage.py collectstatic --noinput
+        pipenv run python manage.py migrate
+        pipenv run python manage.py test
+      env:
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
+        DB_HOST: localhost
+        DB_NAME: postgres
+        DB_PASS: postgres
+        DB_PORT: 5432
+        DB_USER: postgres
