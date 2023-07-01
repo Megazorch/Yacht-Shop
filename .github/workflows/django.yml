@@ -1,4 +1,4 @@
-name: Django CI
+name: Django Run Tests
 
 on:
   push:
@@ -49,17 +49,12 @@ jobs:
       run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
       
     - run: pipenv install
-    
-    - name: Collect static files
+          
+    - name: Run test suite
       run: |
         mkdir /home/runner/work/Yacht-Shop/Yacht-Shop/static
         pipenv run python manage.py collectstatic --noinput
-    
-    - name: Migrate tables
-      run: pipenv run python manage.py migrate
-      
-    - name: Run test suite
-      run: |      
+        pipenv run python manage.py migrate
         pipenv run python manage.py test
       env:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
