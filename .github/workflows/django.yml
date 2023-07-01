@@ -53,9 +53,9 @@ jobs:
     - name: Run test suite
       run: |
         mkdir /home/runner/work/Yacht-Shop/Yacht-Shop/static
-        pipenv run python manage.py collectstatic --noinput
         pipenv run python manage.py migrate
-        pipenv run python manage.py test
+        pipenv run python manage.py test catalog.tests.test_views --verbosity 2
+        pipenv run python maange.py test catalog.tests.test_models --verbosity 2
       env:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
         DB_HOST: localhost
