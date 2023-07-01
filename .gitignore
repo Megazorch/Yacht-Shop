@@ -2,3 +2,4 @@
 catalog/templates_example/
 logins.txt
 media/
+backup.sql
