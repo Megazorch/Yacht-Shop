@@ -53,7 +53,6 @@ jobs:
     - name: Run test suite
       run: |
         mkdir /home/runner/work/Yacht-Shop/Yacht-Shop/static
-        pipenv run python manage.py collectstatic --noinput
         pipenv run python manage.py migrate
         pipenv run python manage.py test
       env:
