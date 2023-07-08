@@ -1,27 +1,33 @@
+"""
+This module contains the tests for views.py.
+"""
 from django.test import TestCase
 from django.urls import reverse
 
-from catalog.models import *
+from catalog import models
+
 
 class YachtListViewTest(TestCase):
+    """ Test module for Paginated Yacht List View """
+
     @classmethod
     def setUpTestData(cls):
         # Set up non-modified objects used by all test methods
-        Broker.objects.create(broker="Ivakhiv Yacht's Co.")
-        broker = Broker.objects.get(id=1)
+        broker = models.Broker.objects.create(broker="Ivakhiv Yacht's.")
+        # Broker.objects.get(id=1)
 
-        Category.objects.create(category="Power")
+        category_objects_for_yacht = models.Category.objects.create(category="Sail")
 
-        yacht = Yacht.objects.create(
+        yacht = models.Yacht.objects.create(
             price=1000000,
-            location='Odesa, Ukraine',
+            location='Kiev, Ukraine',
             year=2022,
-            make="Ivakhiv Yacht's Co.",
-            model='GTX',
-            boat_class='Sports Cruiser',
+            make="Ivakhiv Yacht's.",
+            model='GT',
+            boat_class='Sail',
             length=65,
-            fuel_type='D',  # Diesel
-            hull_material='F',  # Fiberglass
+            fuel_type='E',
+            hull_material='C',
             offered_by=broker,
             description='Description',
             other_details='Other Details',
@@ -29,26 +35,30 @@ class YachtListViewTest(TestCase):
         )
 
         # Create category as a post-step
-        category_objects_for_yacht = Category.objects.get(pk=1)
+        # Category.objects.get(pk=1)
         yacht.category.add(category_objects_for_yacht)
         yacht.save()
 
     def test_view_url_exists_at_desired_location(self):
+        """ Testing if the url exists """
         response = self.client.get('/catalog/yachts/')
         self.assertEqual(response.status_code, 200)
 
     def test_view_url_accessible_by_name(self):
+        """ Testing if the url accessible by name """
         response = self.client.get(reverse('shop'))
         self.assertEqual(response.status_code, 200)
 
     def test_view_uses_correct_template(self):
+        """ Testing if the template is used """
         response = self.client.get(reverse('shop'))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'shop.html')
 
     def test_get_queryset_function(self):
+        """ Testing if the function is used """
         response = self.client.get('/catalog/yachts/?category=1')
         self.assertEqual(response.status_code, 200)
-        #self.assertTrue('is_paginated' in response.context)
-        #self.assertTrue(response.context['is_paginated'] == False)
+        # self.assertTrue('is_paginated' in response.context)
+        # self.assertTrue(response.context['is_paginated'] == False)
         self.assertEqual(len(response.context['yacht_list']), 1)

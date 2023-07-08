@@ -7,7 +7,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Fixed test bags." />
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Migrations">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/permissions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/tests/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yacht_shop/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yacht_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,8 +37,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Unit Test" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -28,21 +48,24 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2NNr5hozxeGltxT9Yj9UInPOxgp" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/ivakhiv/PycharmProjects/yacht_shop/templates",
-    "settings.editor.selected.configurable": "preferences.externalTools"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ivakhiv/PycharmProjects/yacht_shop/templates&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalTools&quot;
   }
-}]]></component>
+}</component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings module-name="yacht_shop" is-module-sdk="true">
@@ -79,13 +102,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Created password reset confirmation html.">
-      <created>1682527570323</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1682527570323</updated>
     </task>
     <task id="LOCAL-00076" summary="Comment">
       <created>1682527579356</created>
@@ -423,11 +439,17 @@
       <option name="project" value="LOCAL" />
       <updated>1688226476898</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="Migrations">
+      <created>1688226895375</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1688226895375</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added two columns for REST API framework." />
     <MESSAGE value="Modified attributes of form for proper work of JavaScript." />
     <MESSAGE value="Added path for REST API framework." />
     <MESSAGE value="Created view for REST API framework." />
@@ -452,6 +474,7 @@
     <MESSAGE value="Added static root for GitActions." />
     <MESSAGE value="Commit." />
     <MESSAGE value="Fixed test bags." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed test bags." />
+    <MESSAGE value="Migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrations" />
   </component>
 </project>

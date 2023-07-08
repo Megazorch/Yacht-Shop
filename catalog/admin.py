@@ -1,11 +1,14 @@
+"""
+Admin panel for yacht_site
+"""
 from django.contrib import admin
-from .models import *
+from catalog import models
 
-admin.site.register(Broker)
-admin.site.register(Category)
-admin.site.register(Yacht)
-admin.site.register(Specifications)
-admin.site.register(Propulsion)
-admin.site.register(Image)
-admin.site.register(Cart)
-admin.site.register(CartLineItem)
+admin.site.register(models.Broker)
+admin.site.register(models.Category)
+admin.site.register(models.Yacht)
+admin.site.register(models.Specifications)
+admin.site.register(models.Propulsion)
+admin.site.register(models.Image)
+admin.site.register(models.Cart)
+admin.site.register(models.CartLineItem)
