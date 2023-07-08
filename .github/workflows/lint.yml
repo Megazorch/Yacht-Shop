@@ -36,3 +36,10 @@ jobs:
       - name: Run pylint-django
         run: pipenv run pylint --ignore=catalog/migrations --load-plugins pylint_django
           --django-settings-module=yacht_shop.settings catalog
+        env:
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          DB_HOST: localhost
+          DB_NAME: postgres
+          DB_PASS: postgres
+          DB_PORT: 5432
+          DB_USER: postgres
