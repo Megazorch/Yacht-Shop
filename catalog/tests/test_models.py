@@ -10,8 +10,7 @@ class YachtModelTest(TestCase):
     @classmethod
     def setUpTestData(cls):
         """Set up non-modified objects used by all test methods """
-        models.Broker.objects.create(broker="Ivakhiv Yacht's Co.")
-        broker = models.Broker.objects.get(id=1)
+        broker = models.Broker.objects.create(broker="Ivakhiv Yacht's Co.")
 
         models.Category.objects.create(category="Power")
 

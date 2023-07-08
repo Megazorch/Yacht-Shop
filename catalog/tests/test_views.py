@@ -14,7 +14,6 @@ class YachtListViewTest(TestCase):
     def setUpTestData(cls):
         # Set up non-modified objects used by all test methods
         broker = models.Broker.objects.create(broker="Ivakhiv Yacht's.")
-        # Broker.objects.get(id=1)
 
         category_objects_for_yacht = models.Category.objects.create(category="Sail")
 
@@ -57,7 +56,7 @@ class YachtListViewTest(TestCase):
 
     def test_get_queryset_function(self):
         """ Testing if the function is used """
-        response = self.client.get('/catalog/yachts/?category=1')
+        response = self.client.get('/catalog/yachts/?category=2')   # only Sail
         self.assertEqual(response.status_code, 200)
         # self.assertTrue('is_paginated' in response.context)
         # self.assertTrue(response.context['is_paginated'] == False)

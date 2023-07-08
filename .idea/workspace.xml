@@ -7,8 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Commit">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/lint.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/lint.yml" afterDir="false" />
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Updated pylint action">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/django.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/django.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/tests/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,20 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00081" summary="Added django forms to Installed Apps to use them in project.">
-      <created>1683133137773</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1683133137773</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Tried to create my own widget. Not successfully.">
-      <created>1683133175821</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1683133175821</updated>
     </task>
     <task id="LOCAL-00083" summary="Refactored form by adding widget and attrs for it.">
       <created>1683133247813</created>
@@ -428,11 +417,24 @@
       <option name="project" value="LOCAL" />
       <updated>1688828707524</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="Updated pylint action">
+      <created>1688829185932</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1688829185932</updated>
+    </task>
+    <task id="LOCAL-00131" summary="Updated pylint action">
+      <created>1688829308773</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1688829308775</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created JS to sent AJAX to my REST API." />
     <MESSAGE value="Modified cart by adding 'plus' and 'minus' buttons with new JS code that send AJAX to REST API." />
     <MESSAGE value="Modified .pb-3 padding by deleting '!important' to have possibility to modify it." />
     <MESSAGE value="Comment" />
@@ -457,6 +459,7 @@
     <MESSAGE value="Installed pylint, pylint-django and autopep8" />
     <MESSAGE value="May use in future" />
     <MESSAGE value="Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+    <MESSAGE value="Updated pylint action" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated pylint action" />
   </component>
 </project>
