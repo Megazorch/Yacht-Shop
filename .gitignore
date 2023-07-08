@@ -3,3 +3,4 @@ logins.txt
 media/
 backup.sql
 requirements.txt
+.pylintrc
