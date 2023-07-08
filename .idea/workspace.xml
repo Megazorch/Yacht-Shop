@@ -7,26 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Migrations">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/permissions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/tests/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/widgets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yacht_shop/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yacht_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/settings.py" afterDir="false" />
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Installed pylint, pylint-django and autopep8">
+      <change beforePath="$PROJECT_DIR$/yacht_shop/__init__.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,27 +84,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00076" summary="Comment">
-      <created>1682527579356</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1682527579356</updated>
-    </task>
-    <task id="LOCAL-00077" summary="What is this?">
-      <created>1682527610086</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1682527610086</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Refactored form by adding plus and minus buttons.">
-      <created>1683132812081</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1683132812082</updated>
     </task>
     <task id="LOCAL-00079" summary="Created a new widget to modify form representation. Not successfully.">
       <created>1683132927943</created>
@@ -446,13 +407,31 @@
       <option name="project" value="LOCAL" />
       <updated>1688226895375</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="Used pylint-django to refactor my code.">
+      <created>1688828460692</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1688828460694</updated>
+    </task>
+    <task id="LOCAL-00126" summary="First steps with docker">
+      <created>1688828493529</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1688828493529</updated>
+    </task>
+    <task id="LOCAL-00127" summary="Installed pylint, pylint-django and autopep8">
+      <created>1688828528702</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1688828528702</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modified attributes of form for proper work of JavaScript." />
-    <MESSAGE value="Added path for REST API framework." />
-    <MESSAGE value="Created view for REST API framework." />
     <MESSAGE value="Modified 'plus' and 'minus' button for correct JavaScript response." />
     <MESSAGE value="Created JS to sent AJAX to my REST API." />
     <MESSAGE value="Modified cart by adding 'plus' and 'minus' buttons with new JS code that send AJAX to REST API." />
@@ -475,6 +454,9 @@
     <MESSAGE value="Commit." />
     <MESSAGE value="Fixed test bags." />
     <MESSAGE value="Migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrations" />
+    <MESSAGE value="Used pylint-django to refactor my code." />
+    <MESSAGE value="First steps with docker" />
+    <MESSAGE value="Installed pylint, pylint-django and autopep8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Installed pylint, pylint-django and autopep8" />
   </component>
 </project>
