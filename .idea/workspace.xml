@@ -7,10 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="May use in future">
-      <change afterPath="$PROJECT_DIR$/.pylintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Commit">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/lint.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/lint.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,13 +84,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00080" summary="Tried to add Categories. Not successfully.">
-      <created>1683133064455</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1683133064456</updated>
     </task>
     <task id="LOCAL-00081" summary="Added django forms to Installed Apps to use them in project.">
       <created>1683133137773</created>
@@ -430,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688828606605</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="Commit">
+      <created>1688828707524</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1688828707524</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -457,8 +455,8 @@
     <MESSAGE value="Used pylint-django to refactor my code." />
     <MESSAGE value="First steps with docker" />
     <MESSAGE value="Installed pylint, pylint-django and autopep8" />
-    <MESSAGE value="Commit" />
     <MESSAGE value="May use in future" />
-    <option name="LAST_COMMIT_MESSAGE" value="May use in future" />
+    <MESSAGE value="Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
   </component>
 </project>
