@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Created action to create and publish docker image to GitHub Packages" />
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,13 +82,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00087" summary="Added 'rest_framework' to my INSTALLED_APPS setting.">
-      <created>1683133876241</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1683133876241</updated>
     </task>
     <task id="LOCAL-00088" summary="Installed 'djangorestframework' for REST API.">
       <created>1683133915912</created>
@@ -426,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688888000207</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="Commit">
+      <created>1688888037950</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1688888037951</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -449,12 +449,12 @@
     <MESSAGE value="First steps with docker" />
     <MESSAGE value="Installed pylint, pylint-django and autopep8" />
     <MESSAGE value="May use in future" />
-    <MESSAGE value="Commit" />
     <MESSAGE value="Updated pylint action" />
     <MESSAGE value="Refactored test to solve bug" />
     <MESSAGE value="Refactored test command" />
     <MESSAGE value="Changed python version for more lightweight version" />
     <MESSAGE value="Created action to create and publish docker image to GitHub Packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created action to create and publish docker image to GitHub Packages" />
+    <MESSAGE value="Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
   </component>
 </project>
