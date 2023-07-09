@@ -1,5 +1,5 @@
 # Base image
-FROM python:3
+FROM python:3.11.4-slim-bullseye
 
 # Set the working directory
 WORKDIR /yacht-shop
