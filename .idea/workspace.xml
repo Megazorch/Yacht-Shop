@@ -7,11 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Updated pylint action">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/django.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/django.yml" afterDir="false" />
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Refactored test command">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/docker.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/tests/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yacht_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,20 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Refactored form by adding widget and attrs for it.">
-      <created>1683133247813</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1683133247813</updated>
-    </task>
-    <task id="LOCAL-00084" summary="Added new block.">
-      <created>1683133287855</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1683133287856</updated>
     </task>
     <task id="LOCAL-00085" summary="Comment.">
       <created>1683133300017</created>
@@ -431,12 +417,24 @@
       <option name="project" value="LOCAL" />
       <updated>1688829308775</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="Refactored test to solve bug">
+      <created>1688830870744</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1688830870744</updated>
+    </task>
+    <task id="LOCAL-00133" summary="Refactored test command">
+      <created>1688830888444</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1688830888444</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modified cart by adding 'plus' and 'minus' buttons with new JS code that send AJAX to REST API." />
-    <MESSAGE value="Modified .pb-3 padding by deleting '!important' to have possibility to modify it." />
     <MESSAGE value="Comment" />
     <MESSAGE value="Deleted useless part of code." />
     <MESSAGE value="Fixed bug that when created a new cart line item the owner is always admin." />
@@ -460,6 +458,8 @@
     <MESSAGE value="May use in future" />
     <MESSAGE value="Commit" />
     <MESSAGE value="Updated pylint action" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated pylint action" />
+    <MESSAGE value="Refactored test to solve bug" />
+    <MESSAGE value="Refactored test command" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored test command" />
   </component>
 </project>
