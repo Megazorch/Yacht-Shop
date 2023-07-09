@@ -83,13 +83,6 @@
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
     </task>
-    <task id="LOCAL-00089" summary="Commit">
-      <created>1683133922052</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1683133922052</updated>
-    </task>
     <task id="LOCAL-00090" summary="Installed 'httpie' - didn't help.">
       <created>1684653186151</created>
       <option name="number" value="00090" />
@@ -426,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688888685175</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="Commit">
+      <created>1688888792921</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1688888792921</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
