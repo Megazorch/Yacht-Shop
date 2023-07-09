@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Commit" />
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Version 1.0" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,13 +82,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Installed 'httpie' - didn't help.">
-      <created>1684653186151</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1684653186152</updated>
     </task>
     <task id="LOCAL-00091" summary="Added REST_FRAMEWORK settings.">
       <created>1684653230365</created>
@@ -426,11 +419,17 @@
       <option name="project" value="LOCAL" />
       <updated>1688888792921</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="Version 1.0">
+      <created>1688888914806</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1688888914806</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed bug that when created a new cart line item the owner is always admin." />
     <MESSAGE value="Added 'Delete' button for cart line item." />
     <MESSAGE value="Refactored 'about.html' template for my own use." />
     <MESSAGE value="Refactored 'contact.html' template for my own use. Added map from scratch." />
@@ -455,6 +454,7 @@
     <MESSAGE value="Changed python version for more lightweight version" />
     <MESSAGE value="Created action to create and publish docker image to GitHub Packages" />
     <MESSAGE value="Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+    <MESSAGE value="Version 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.0" />
   </component>
 </project>
