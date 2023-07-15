@@ -20,13 +20,17 @@
                     {% for category in categories %}
                         <li class="pb-3">
                             <a class="collapsed d-flex justify-content-between h3 text-decoration-none"
-                               href="/catalog/yachts/?category={{ forloop.counter }}">
+                               href="/catalog/yachts/?category=">
                                 {{ category.category }}
                                 <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
                             </a>
-                            <ul class="collapse show list-unstyled pl-3">
-                                <li><a class="text-decoration-none" href="#">None</a></li>
-                            </ul>
+                            {% for category_id, amount in yachts_in_each_category %}
+                                {% if category_id == forloop.parentloop.counter %}
+                                    <ul class="collapse show list-unstyled pl-3">
+                                        <li><a class="text-decoration-none" href="/catalog/yachts/?category={{ forloop.parentloop.counter }}">Total amount: {{ amount }}</a></li>
+                                    </ul>
+                                {% endif %}
+                            {% endfor %}
                         </li>
                     {% endfor %}
                 </ul>
