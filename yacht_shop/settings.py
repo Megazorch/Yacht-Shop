@@ -75,7 +75,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'catalog.context_processors.cart_id',
+                'catalog.context_processors.cart_id_for_header',
                 'catalog.context_processors.categories_for_footer',
             ],
         },
