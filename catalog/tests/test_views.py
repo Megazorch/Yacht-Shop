@@ -15,7 +15,8 @@ class YachtListViewTest(TestCase):
         # Set up non-modified objects used by all test methods
         broker = models.Broker.objects.create(broker="Ivakhiv Yacht's.")
 
-        category_objects_for_yacht = models.Category.objects.create(category="Sail")
+        category_objects_for_yacht = models.Category.objects.create(
+            category="Sail")
 
         yacht = models.Yacht.objects.create(
             price=1000000,
