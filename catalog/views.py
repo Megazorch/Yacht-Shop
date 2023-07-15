@@ -1,6 +1,7 @@
 """
 Definition of views.
 """
+from django.db import connection
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
@@ -40,20 +41,69 @@ class ContactView(generic.TemplateView):
 class YachtListView(generic.ListView):
     """ Yacht list view class """
     model = models.Yacht
-    template_name = 'shop.html'  # Specify your own template name/location
+    template_name = 'shop.html'
 
     def get_queryset(self):     # ChatGPT
         queryset = super().get_queryset()
         category_id = self.request.GET.get('category', )
+        sort_option = self.request.GET.get('sort', )
 
         # Filter the queryset based on the category_id
-        if category_id:
-            queryset = queryset.filter(category__id=category_id)
+        if category_id and sort_option:
+            sort_option = sort_option.split('_')
+            query = """SELECT y.*
+                        FROM catalog_yacht AS y
+                        JOIN catalog_yacht_category AS yc ON y.id = yc.yacht_id
+                        JOIN catalog_category AS c ON yc.category_id = c.id
+                        WHERE c.id = %s
+                        ORDER BY 
+                        """ + sort_option[0] + """ """ + sort_option[1] + ';'
+            params = [category_id]
+            queryset = models.Yacht.objects.raw(query, params)
+
+        elif category_id:
+            queryset = queryset.filter(category__id=category_id).order_by('model')  # because 'A to Z' option first
+
+        elif sort_option:
+            if sort_option == 'price_asc':
+                queryset = queryset.order_by('price')
+            elif sort_option == 'price_desc':
+                queryset = queryset.order_by('-price')
+            elif sort_option == 'model_asc':
+                queryset = queryset.order_by('model')
+            elif sort_option == 'model_desc':
+                queryset = queryset.order_by('-model')
+            elif sort_option == 'year_asc':
+                queryset = queryset.order_by('year')
+            elif sort_option == 'year_desc':
+                queryset = queryset.order_by('-year')
+            elif sort_option == 'length_asc':
+                queryset = queryset.order_by('length')
+            elif sort_option == 'length_desc':
+                queryset = queryset.order_by('-length')
+        else:
+            queryset = queryset.order_by('model')   # default sorting by 'A to Z'
+
         return queryset
 
     def get_context_data(self, **kwargs):       # ChatGPT
         context = super().get_context_data(**kwargs)
         context['categories'] = models.Category.objects.all()
+
+        with connection.cursor() as cursor:
+            cursor.execute("""SELECT category_id, COUNT(*) FROM catalog_yacht_category
+                            JOIN catalog_category ON catalog_yacht_category.category_id = catalog_category.id
+                            GROUP BY category_id;""")
+            yachts_in_each_category = cursor.fetchall()
+
+        context['yachts_in_each_category'] = yachts_in_each_category
+
+        # choices for sorting with select tag
+        choices = [('model_asc', 'A to Z'), ('model_desc', 'Z to A'), ('price_asc', 'Cheap to Expensive'),
+                   ('price_desc', 'Expensive to Cheap'), ('year_desc', 'Newest to Oldest'),
+                   ('year_asc', 'Oldest to Newest'), ('length_asc', 'Shortest to Longest'),
+                   ('length_desc', 'Longest to Shortest')]
+        context['sort_options'] = choices
         return context
 
 
@@ -122,7 +172,7 @@ class YachtDetailView(generic.DetailView):
 class CartDetailView(generic.DetailView):
     """ Cart detail view class """
     model = models.Cart
-    form = forms.AddToCartForm()
+    #form = forms.AddToCartForm()
     template_name = 'cart.html'
 
     def get_context_data(self, **kwargs):       # ChatGPT
