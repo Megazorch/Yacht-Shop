@@ -1,11 +1,11 @@
 """
-This module is used to create a context processor for the cart_id and retrieve total amount of items in the cart.
+Context processor to retrieve cart_id and total amount of items in the cart.
 """
 from catalog import models
 
 
-def cart_id(request):
-    """ This function is used to retrieve the cart_id of the user and retrieve total amount of items in the cart.
+def cart_id_for_header(request):
+    """ Retrieve the cart_id and total amount of items in the cart.
     :param request:
     :return:
     """
@@ -13,14 +13,16 @@ def cart_id(request):
     total_amount_of_items_in_cart = 0
 
     if request.user.is_authenticated:
-        cart_id = request.user.cart.id  # Assuming the cart ID is accessible through request.user.cart
+        cart_id = request.user.cart.id
 
     cart_items = models.CartLineItem.objects.filter(cart=cart_id)
 
     for item in cart_items:
         total_amount_of_items_in_cart += item.quantity
 
-    return {'card_id': cart_id, 'total_amount_of_items_in_cart': total_amount_of_items_in_cart}
+    return {
+        'card_id': cart_id,
+        'total_amount_of_items_in_cart': total_amount_of_items_in_cart}
 
 
 def categories_for_footer(request):
