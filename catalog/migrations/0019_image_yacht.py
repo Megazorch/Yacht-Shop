@@ -7,13 +7,16 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('catalog', '0018_cart_alter_broker_options_alter_category_options_and_more'),
-    ]
+        ('catalog', '0018_cart_alter_broker_options_alter_category_options_and_more'), ]
 
     operations = [
         migrations.AddField(
             model_name='image',
             name='yacht',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='catalog.yacht'),
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                to='catalog.yacht'),
         ),
     ]

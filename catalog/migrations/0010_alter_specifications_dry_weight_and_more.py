@@ -13,11 +13,21 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='specifications',
             name='dry_weight',
-            field=models.DecimalField(blank=True, decimal_places=3, help_text='Example: 68,343Lb', max_digits=6, null=True),
+            field=models.DecimalField(
+                blank=True,
+                decimal_places=3,
+                help_text='Example: 68,343Lb',
+                max_digits=6,
+                null=True),
         ),
         migrations.AlterField(
             model_name='specifications',
             name='length_at_waterline',
-            field=models.DecimalField(blank=True, decimal_places=2, help_text='Length in ft.', max_digits=5, null=True),
+            field=models.DecimalField(
+                blank=True,
+                decimal_places=2,
+                help_text='Length in ft.',
+                max_digits=5,
+                null=True),
         ),
     ]
