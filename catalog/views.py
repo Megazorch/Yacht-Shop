@@ -85,7 +85,8 @@ class YachtListView(generic.ListView):
         with connection.cursor() as cursor:
             cursor.execute(
                 """SELECT category_id, COUNT(*) FROM catalog_yacht_category
-                            JOIN catalog_category ON catalog_yacht_category.category_id = catalog_category.id
+                            JOIN catalog_category
+                            ON catalog_yacht_category.category_id = catalog_category.id   
                             GROUP BY category_id;""")
             yachts_in_each_category = cursor.fetchall()
 
@@ -133,8 +134,8 @@ class YachtDetailView(generic.DetailView):
             if not request.user.is_authenticated:
                 return redirect('/accounts/login')
 
-            cart, created = models.Cart.objects.get_or_create(
-                user=request.user)    # pylint: disable=unused-variable
+            cart, created = models.Cart.objects.get_or_create(  # pylint: disable=unused-variable
+                user=request.user)
 
             # Check if the yacht is already in the cart
             try:

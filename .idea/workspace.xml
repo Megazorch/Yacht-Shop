@@ -7,35 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Commit">
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Refactor name of function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/context_processors.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/context_processors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0003_alter_yacht_length.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0003_alter_yacht_length.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0004_alter_propulsion_engine_year_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0004_alter_propulsion_engine_year_and_more.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0005_specifications_range.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0005_specifications_range.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0006_alter_specifications_cruising_speed_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0006_alter_specifications_cruising_speed_and_more.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0008_yacht_yacht_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0008_yacht_yacht_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0009_alter_yacht_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0009_alter_yacht_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0010_alter_specifications_dry_weight_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0010_alter_specifications_dry_weight_and_more.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0011_category_yacht_category.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0011_category_yacht_category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0012_image_remove_yacht_yacht_image_yacht_yacht_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0012_image_remove_yacht_yacht_image_yacht_yacht_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0013_image_yacht.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0013_image_yacht.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0014_alter_yacht_yacht_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0014_alter_yacht_yacht_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0015_alter_yacht_yacht_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0015_alter_yacht_yacht_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0016_alter_image_yacht.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0016_alter_image_yacht.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0019_image_yacht.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0019_image_yacht.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0022_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0022_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0024_cart_image_cartlineitem_yacht_yacht_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0024_cart_image_cartlineitem_yacht_yacht_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0025_cart_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0025_cart_user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0027_cartlineitem_highlighted_cartlineitem_owner.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0027_cartlineitem_highlighted_cartlineitem_owner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0028_alter_cartlineitem_owner.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0028_alter_cartlineitem_owner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/migrations/0029_alter_yacht_price_currency.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/migrations/0029_alter_yacht_price_currency.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/tests/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/static/css/fontawesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/static/css/fontawesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yacht_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,62 +89,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00109" summary="Refactored 'about.html' template for my own use.">
-      <created>1686688699263</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1686688699264</updated>
-    </task>
-    <task id="LOCAL-00110" summary="Refactored 'contact.html' template for my own use. Added map from scratch.">
-      <created>1686688742840</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1686688742840</updated>
-    </task>
-    <task id="LOCAL-00111" summary="Modified by adding 'Sing Up' button.">
-      <created>1686688792131</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1686688792131</updated>
-    </task>
-    <task id="LOCAL-00112" summary="Created 'Sing Up' page by tutorial. Used build-in form for Sing Up.">
-      <created>1686688900945</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1686688900945</updated>
-    </task>
-    <task id="LOCAL-00113" summary="Modified with proper links.">
-      <created>1686688950431</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1686688950431</updated>
-    </task>
-    <task id="LOCAL-00114" summary="Added paths for sing-up, about and contact pages.">
-      <created>1686688978096</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1686688978096</updated>
-    </task>
-    <task id="LOCAL-00115" summary="Created views for about and contact pages.">
-      <created>1686689033301</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1686689033301</updated>
-    </task>
-    <task id="LOCAL-00116" summary="Added check for authentication before proceeding to cart.">
-      <created>1686689163206</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1686689163206</updated>
     </task>
     <task id="LOCAL-00117" summary="Created view for Sing Up page.">
       <created>1686689200963</created>
@@ -456,13 +377,66 @@
       <option name="project" value="LOCAL" />
       <updated>1689432038604</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="Autopep8">
+      <created>1689434796076</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434796076</updated>
+    </task>
+    <task id="LOCAL-00159" summary="Autopep8 and pylint changes">
+      <created>1689434838902</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434838902</updated>
+    </task>
+    <task id="LOCAL-00160" summary="Autopep8 and pylint changes">
+      <created>1689434870597</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434870597</updated>
+    </task>
+    <task id="LOCAL-00161" summary="Autopep8 and pylint changes">
+      <created>1689434875797</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434875798</updated>
+    </task>
+    <task id="LOCAL-00162" summary="Autopep8 and pylint changes">
+      <created>1689434926278</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434926278</updated>
+    </task>
+    <task id="LOCAL-00163" summary="Autopep8 and pylint changes">
+      <created>1689434960223</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434960223</updated>
+    </task>
+    <task id="LOCAL-00164" summary="Autopep8 and pylint changes">
+      <created>1689434967617</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434967617</updated>
+    </task>
+    <task id="LOCAL-00165" summary="Refactor name of function">
+      <created>1689434986385</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434986385</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactored test to solve bug" />
-    <MESSAGE value="Refactored test command" />
-    <MESSAGE value="Changed python version for more lightweight version" />
     <MESSAGE value="Created action to create and publish docker image to GitHub Packages" />
     <MESSAGE value="Resolve merge conflict" />
     <MESSAGE value="Create custom processor to use it in base_generic.html" />
@@ -485,6 +459,9 @@
     <MESSAGE value="Added link to JS script that listen to changes it quantity of items in cart." />
     <MESSAGE value="Added raw SQL and logic for 'sort' parameter from url." />
     <MESSAGE value="Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+    <MESSAGE value="Autopep8" />
+    <MESSAGE value="Autopep8 and pylint changes" />
+    <MESSAGE value="Refactor name of function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor name of function" />
   </component>
 </project>
