@@ -7,12 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Refactor name of function">
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Minor fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/static/css/fontawesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/static/css/fontawesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,27 +86,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00117" summary="Created view for Sing Up page.">
-      <created>1686689200963</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1686689200963</updated>
-    </task>
-    <task id="LOCAL-00118" summary="Commit.">
-      <created>1686689216510</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1686689216510</updated>
-    </task>
-    <task id="LOCAL-00119" summary="Commit.">
-      <created>1686689240050</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1686689240050</updated>
     </task>
     <task id="LOCAL-00120" summary="Added static root for GitActions.">
       <created>1688224360853</created>
@@ -433,12 +409,31 @@
       <option name="project" value="LOCAL" />
       <updated>1689434986385</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="Modified icons for login and logout. Also fixed bug with cart.">
+      <created>1689446036589</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1689446036589</updated>
+    </task>
+    <task id="LOCAL-00167" summary="Minor fix">
+      <created>1689446064545</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1689446064545</updated>
+    </task>
+    <task id="LOCAL-00168" summary="Minor fix">
+      <created>1689446080606</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1689446080606</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created action to create and publish docker image to GitHub Packages" />
-    <MESSAGE value="Resolve merge conflict" />
     <MESSAGE value="Create custom processor to use it in base_generic.html" />
     <MESSAGE value="My photo for about.html" />
     <MESSAGE value="Changed template image with my photo." />
@@ -462,6 +457,8 @@
     <MESSAGE value="Autopep8" />
     <MESSAGE value="Autopep8 and pylint changes" />
     <MESSAGE value="Refactor name of function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor name of function" />
+    <MESSAGE value="Modified icons for login and logout. Also fixed bug with cart." />
+    <MESSAGE value="Minor fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor fix" />
   </component>
 </project>
