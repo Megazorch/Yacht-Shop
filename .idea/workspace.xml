@@ -7,10 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Minor fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_views.py" afterDir="false" />
-    </list>
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Fixed and updated test_get_queryset_function" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,13 +83,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00120" summary="Added static root for GitActions.">
-      <created>1688224360853</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1688224360855</updated>
     </task>
     <task id="LOCAL-00121" summary="Commit.">
       <created>1688224375018</created>
@@ -430,11 +420,17 @@
       <option name="project" value="LOCAL" />
       <updated>1689446080606</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="Fixed and updated test_get_queryset_function">
+      <created>1689484586057</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1689484586058</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create custom processor to use it in base_generic.html" />
     <MESSAGE value="My photo for about.html" />
     <MESSAGE value="Changed template image with my photo." />
     <MESSAGE value="Used custom processor to retrieve card_id and amount items inside to show it on page." />
@@ -459,6 +455,7 @@
     <MESSAGE value="Refactor name of function" />
     <MESSAGE value="Modified icons for login and logout. Also fixed bug with cart." />
     <MESSAGE value="Minor fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor fix" />
+    <MESSAGE value="Fixed and updated test_get_queryset_function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed and updated test_get_queryset_function" />
   </component>
 </project>
