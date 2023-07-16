@@ -13,6 +13,9 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='specifications',
             name='range',
-            field=models.PositiveIntegerField(blank=True, help_text='The max. distance that the yacht can travel from the shore in nm.', null=True),
+            field=models.PositiveIntegerField(
+                blank=True,
+                help_text='The max. distance that the yacht can travel from the shore in nm.',
+                null=True),
         ),
     ]

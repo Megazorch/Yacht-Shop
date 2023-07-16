@@ -13,8 +13,15 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Image',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('image', models.ImageField(upload_to='images/')),
+                ('id',
+                 models.BigAutoField(
+                     auto_created=True,
+                     primary_key=True,
+                     serialize=False,
+                     verbose_name='ID')),
+                ('image',
+                 models.ImageField(
+                     upload_to='images/')),
             ],
         ),
         migrations.RemoveField(
@@ -24,6 +31,8 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='yacht',
             name='yacht_image',
-            field=models.ManyToManyField(related_name='yachts', to='catalog.image'),
+            field=models.ManyToManyField(
+                related_name='yachts',
+                to='catalog.image'),
         ),
     ]

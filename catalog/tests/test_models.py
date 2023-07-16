@@ -5,6 +5,7 @@ from django.test import TestCase
 
 from catalog import models
 
+
 class YachtModelTest(TestCase):
     """ Test module for Yacht model """
     @classmethod
@@ -50,7 +51,6 @@ class YachtModelTest(TestCase):
         expected_object_name = f'{yacht.year} {yacht.make} {yacht.model} | {yacht.length} ft.'
         self.assertEqual(str(yacht), expected_object_name)
 
-
     def test_catalog_proper_assign(self):
         """ Testing catalog proper assign """
         yacht = models.Yacht.objects.get(id=1)
@@ -71,7 +71,6 @@ class YachtModelTest(TestCase):
 
         self.assertEqual('Diesel', full_fuel_type)
 
-
     def test_custom_all_basic_fields_function(self):
         """ Testing custom all basic fields function """
         yacht = models.Yacht.objects.get(id=1)
@@ -81,7 +80,6 @@ class YachtModelTest(TestCase):
         self.assertEqual(len(list_of_field_names), 10)
         self.assertEqual(list_of_field_names[0], ('Year', 2022))
         self.assertEqual(list_of_field_names[5], ('Fuel type', 'Diesel'))
-
 
     def test_get_absolute_url(self):
         """ Testing get absolute url"""

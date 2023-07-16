@@ -7,10 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Created action to create and publish docker image to GitHub Packages">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/docker.yml" afterDir="false" />
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Fixed pylint warning">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/ivakhiv/PycharmProjects/yacht_shop/templates&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalTools&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="PyConsoleOptionsProvider">
@@ -72,6 +71,7 @@
       <recent name="$PROJECT_DIR$/catalog/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/catalog" />
       <recent name="$PROJECT_DIR$/catalog/templates" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/catalog/tests" />
@@ -86,251 +86,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00087" summary="Added 'rest_framework' to my INSTALLED_APPS setting.">
-      <created>1683133876241</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1683133876241</updated>
-    </task>
-    <task id="LOCAL-00088" summary="Installed 'djangorestframework' for REST API.">
-      <created>1683133915912</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1683133915912</updated>
-    </task>
-    <task id="LOCAL-00089" summary="Commit">
-      <created>1683133922052</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1683133922052</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Installed 'httpie' - didn't help.">
-      <created>1684653186151</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1684653186152</updated>
-    </task>
-    <task id="LOCAL-00091" summary="Added REST_FRAMEWORK settings.">
-      <created>1684653230365</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1684653230365</updated>
-    </task>
-    <task id="LOCAL-00092" summary="Created serializer for REST API framework.">
-      <created>1684653270995</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1684653270995</updated>
-    </task>
-    <task id="LOCAL-00093" summary="Created permissions as per tutorial for serializers.">
-      <created>1684653315143</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1684653315143</updated>
-    </task>
-    <task id="LOCAL-00094" summary="Added two columns for REST API framework.">
-      <created>1684653399023</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1684653399023</updated>
-    </task>
-    <task id="LOCAL-00095" summary="Modified attributes of form for proper work of JavaScript.">
-      <created>1684653443021</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1684653443021</updated>
-    </task>
-    <task id="LOCAL-00096" summary="Added path for REST API framework.">
-      <created>1684653465543</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1684653465543</updated>
-    </task>
-    <task id="LOCAL-00097" summary="Created view for REST API framework.">
-      <created>1684653510974</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1684653510974</updated>
-    </task>
-    <task id="LOCAL-00098" summary="Modified 'plus' and 'minus' button for correct JavaScript response.">
-      <created>1684653566863</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1684653566864</updated>
-    </task>
-    <task id="LOCAL-00099" summary="Created JS to sent AJAX to my REST API.">
-      <created>1684653608290</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1684653608290</updated>
-    </task>
-    <task id="LOCAL-00100" summary="Modified cart by adding 'plus' and 'minus' buttons with new JS code that send AJAX to REST API.">
-      <created>1684653668929</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1684653668930</updated>
-    </task>
-    <task id="LOCAL-00101" summary="Modified .pb-3 padding by deleting '!important' to have possibility to modify it.">
-      <created>1684653733571</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1684653733571</updated>
-    </task>
-    <task id="LOCAL-00102" summary="Comment">
-      <created>1684653744296</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1684653744296</updated>
-    </task>
-    <task id="LOCAL-00103" summary="Comment">
-      <created>1684653746438</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1684653746438</updated>
-    </task>
-    <task id="LOCAL-00104" summary="Deleted useless part of code.">
-      <created>1684655140088</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1684655140088</updated>
-    </task>
-    <task id="LOCAL-00105" summary="Fixed bug that when created a new cart line item the owner is always admin.">
-      <created>1684655265201</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1684655265202</updated>
-    </task>
-    <task id="LOCAL-00106" summary="Commit">
-      <created>1684655274291</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1684655274291</updated>
-    </task>
-    <task id="LOCAL-00107" summary="Added 'Delete' button for cart line item.">
-      <created>1685257167040</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1685257167040</updated>
-    </task>
-    <task id="LOCAL-00108" summary="Added 'Delete' button for cart line item.">
-      <created>1685646744180</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1685646744181</updated>
-    </task>
-    <task id="LOCAL-00109" summary="Refactored 'about.html' template for my own use.">
-      <created>1686688699263</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1686688699264</updated>
-    </task>
-    <task id="LOCAL-00110" summary="Refactored 'contact.html' template for my own use. Added map from scratch.">
-      <created>1686688742840</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1686688742840</updated>
-    </task>
-    <task id="LOCAL-00111" summary="Modified by adding 'Sing Up' button.">
-      <created>1686688792131</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1686688792131</updated>
-    </task>
-    <task id="LOCAL-00112" summary="Created 'Sing Up' page by tutorial. Used build-in form for Sing Up.">
-      <created>1686688900945</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1686688900945</updated>
-    </task>
-    <task id="LOCAL-00113" summary="Modified with proper links.">
-      <created>1686688950431</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1686688950431</updated>
-    </task>
-    <task id="LOCAL-00114" summary="Added paths for sing-up, about and contact pages.">
-      <created>1686688978096</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1686688978096</updated>
-    </task>
-    <task id="LOCAL-00115" summary="Created views for about and contact pages.">
-      <created>1686689033301</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1686689033301</updated>
-    </task>
-    <task id="LOCAL-00116" summary="Added check for authentication before proceeding to cart.">
-      <created>1686689163206</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1686689163206</updated>
-    </task>
-    <task id="LOCAL-00117" summary="Created view for Sing Up page.">
-      <created>1686689200963</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1686689200963</updated>
-    </task>
-    <task id="LOCAL-00118" summary="Commit.">
-      <created>1686689216510</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1686689216510</updated>
-    </task>
-    <task id="LOCAL-00119" summary="Commit.">
-      <created>1686689240050</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1686689240050</updated>
-    </task>
-    <task id="LOCAL-00120" summary="Added static root for GitActions.">
-      <created>1688224360853</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1688224360855</updated>
-    </task>
-    <task id="LOCAL-00121" summary="Commit.">
-      <created>1688224375018</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1688224375018</updated>
     </task>
     <task id="LOCAL-00122" summary="Commit.">
       <created>1688224631586</created>
@@ -430,35 +185,280 @@
       <option name="project" value="LOCAL" />
       <updated>1688888000207</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="Resolve merge conflict">
+      <created>1688892549343</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1688892549344</updated>
+    </task>
+    <task id="LOCAL-00137" summary="Create custom processor to use it in base_generic.html">
+      <created>1689426441004</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1689426441005</updated>
+    </task>
+    <task id="LOCAL-00138" summary="My photo for about.html">
+      <created>1689426466168</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1689426466168</updated>
+    </task>
+    <task id="LOCAL-00139" summary="Changed template image with my photo.">
+      <created>1689426514194</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1689426514194</updated>
+    </task>
+    <task id="LOCAL-00140" summary="Used custom processor to retrieve card_id and amount items inside to show it on page.">
+      <created>1689426612776</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1689426612776</updated>
+    </task>
+    <task id="LOCAL-00141" summary="Deleted old code">
+      <created>1689426637430</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1689426637430</updated>
+    </task>
+    <task id="LOCAL-00142" summary="Updated some information on page">
+      <created>1689426676892</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1689426676892</updated>
+    </task>
+    <task id="LOCAL-00143" summary="Used custom processor to retrieve categories for correct links.">
+      <created>1689426722225</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1689426722225</updated>
+    </task>
+    <task id="LOCAL-00144" summary="Deleted custom.js to use it only in proper place and not everywhere to avoid conflicts.">
+      <created>1689426777784</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1689426777784</updated>
+    </task>
+    <task id="LOCAL-00145" summary="Created form that would show user an options for sorting but never use it.">
+      <created>1689426855340</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1689426855340</updated>
+    </task>
+    <task id="LOCAL-00146" summary="Added links to my custom processors. Otherwise it will not work.">
+      <created>1689426940916</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1689426940916</updated>
+    </task>
+    <task id="LOCAL-00147" summary="Added link to return back to all yachts in the list.">
+      <created>1689429917658</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1689429917658</updated>
+    </task>
+    <task id="LOCAL-00148" summary="Modified categories so that it generate a correct url.">
+      <created>1689430029600</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1689430029600</updated>
+    </task>
+    <task id="LOCAL-00149" summary="Deleted categories from above panel.">
+      <created>1689430063342</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1689430063342</updated>
+    </task>
+    <task id="LOCAL-00150" summary="Modified select tag so that it shows a proper value for sorting.">
+      <created>1689430111845</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1689430111845</updated>
+    </task>
+    <task id="LOCAL-00151" summary="Add JavaScript file that will sort list listening to changes in select tag.">
+      <created>1689430158618</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1689430158618</updated>
+    </task>
+    <task id="LOCAL-00152" summary="Created script that generates a new url depending on current url and select option chosen by user.">
+      <created>1689430220464</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1689430220464</updated>
+    </task>
+    <task id="LOCAL-00153" summary="Returned previous url link for Serializer.">
+      <created>1689430277660</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1689430277660</updated>
+    </task>
+    <task id="LOCAL-00154" summary="Added link to JS script that listen to changes it quantity of items in cart.">
+      <created>1689430705056</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1689430705056</updated>
+    </task>
+    <task id="LOCAL-00155" summary="Added raw SQL and logic for 'sort' parameter from url.">
+      <created>1689430785705</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1689430785705</updated>
+    </task>
+    <task id="LOCAL-00156" summary="Commit">
+      <created>1689430790804</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1689430790804</updated>
+    </task>
+    <task id="LOCAL-00157" summary="Commit">
+      <created>1689432038603</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1689432038604</updated>
+    </task>
+    <task id="LOCAL-00158" summary="Autopep8">
+      <created>1689434796076</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434796076</updated>
+    </task>
+    <task id="LOCAL-00159" summary="Autopep8 and pylint changes">
+      <created>1689434838902</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434838902</updated>
+    </task>
+    <task id="LOCAL-00160" summary="Autopep8 and pylint changes">
+      <created>1689434870597</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434870597</updated>
+    </task>
+    <task id="LOCAL-00161" summary="Autopep8 and pylint changes">
+      <created>1689434875797</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434875798</updated>
+    </task>
+    <task id="LOCAL-00162" summary="Autopep8 and pylint changes">
+      <created>1689434926278</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434926278</updated>
+    </task>
+    <task id="LOCAL-00163" summary="Autopep8 and pylint changes">
+      <created>1689434960223</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434960223</updated>
+    </task>
+    <task id="LOCAL-00164" summary="Autopep8 and pylint changes">
+      <created>1689434967617</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434967617</updated>
+    </task>
+    <task id="LOCAL-00165" summary="Refactor name of function">
+      <created>1689434986385</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1689434986385</updated>
+    </task>
+    <task id="LOCAL-00166" summary="Modified icons for login and logout. Also fixed bug with cart.">
+      <created>1689446036589</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1689446036589</updated>
+    </task>
+    <task id="LOCAL-00167" summary="Minor fix">
+      <created>1689446064545</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1689446064545</updated>
+    </task>
+    <task id="LOCAL-00168" summary="Minor fix">
+      <created>1689446080606</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1689446080606</updated>
+    </task>
+    <task id="LOCAL-00169" summary="Fixed and updated test_get_queryset_function">
+      <created>1689484586057</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1689484586058</updated>
+    </task>
+    <task id="LOCAL-00170" summary="Fixed pylint warning">
+      <created>1689485211926</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1689485211926</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed bug that when created a new cart line item the owner is always admin." />
-    <MESSAGE value="Added 'Delete' button for cart line item." />
-    <MESSAGE value="Refactored 'about.html' template for my own use." />
-    <MESSAGE value="Refactored 'contact.html' template for my own use. Added map from scratch." />
-    <MESSAGE value="Modified by adding 'Sing Up' button." />
-    <MESSAGE value="Created 'Sing Up' page by tutorial. Used build-in form for Sing Up." />
-    <MESSAGE value="Modified with proper links." />
-    <MESSAGE value="Added paths for sing-up, about and contact pages." />
-    <MESSAGE value="Created views for about and contact pages." />
-    <MESSAGE value="Added check for authentication before proceeding to cart." />
-    <MESSAGE value="Created view for Sing Up page." />
-    <MESSAGE value="Added static root for GitActions." />
-    <MESSAGE value="Commit." />
-    <MESSAGE value="Fixed test bags." />
-    <MESSAGE value="Migrations" />
-    <MESSAGE value="Used pylint-django to refactor my code." />
-    <MESSAGE value="First steps with docker" />
-    <MESSAGE value="Installed pylint, pylint-django and autopep8" />
-    <MESSAGE value="May use in future" />
+    <MESSAGE value="Changed template image with my photo." />
+    <MESSAGE value="Used custom processor to retrieve card_id and amount items inside to show it on page." />
+    <MESSAGE value="Deleted old code" />
+    <MESSAGE value="Updated some information on page" />
+    <MESSAGE value="Used custom processor to retrieve categories for correct links." />
+    <MESSAGE value="Deleted custom.js to use it only in proper place and not everywhere to avoid conflicts." />
+    <MESSAGE value="Created form that would show user an options for sorting but never use it." />
+    <MESSAGE value="Added links to my custom processors. Otherwise it will not work." />
+    <MESSAGE value="Added link to return back to all yachts in the list." />
+    <MESSAGE value="Modified categories so that it generate a correct url." />
+    <MESSAGE value="Deleted categories from above panel." />
+    <MESSAGE value="Modified select tag so that it shows a proper value for sorting." />
+    <MESSAGE value="Add JavaScript file that will sort list listening to changes in select tag." />
+    <MESSAGE value="Created script that generates a new url depending on current url and select option chosen by user." />
+    <MESSAGE value="Returned previous url link for Serializer." />
+    <MESSAGE value="Added link to JS script that listen to changes it quantity of items in cart." />
+    <MESSAGE value="Added raw SQL and logic for 'sort' parameter from url." />
     <MESSAGE value="Commit" />
-    <MESSAGE value="Updated pylint action" />
-    <MESSAGE value="Refactored test to solve bug" />
-    <MESSAGE value="Refactored test command" />
-    <MESSAGE value="Changed python version for more lightweight version" />
-    <MESSAGE value="Created action to create and publish docker image to GitHub Packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created action to create and publish docker image to GitHub Packages" />
+    <MESSAGE value="Autopep8" />
+    <MESSAGE value="Autopep8 and pylint changes" />
+    <MESSAGE value="Refactor name of function" />
+    <MESSAGE value="Modified icons for login and logout. Also fixed bug with cart." />
+    <MESSAGE value="Minor fix" />
+    <MESSAGE value="Fixed and updated test_get_queryset_function" />
+    <MESSAGE value="Fixed pylint warning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed pylint warning" />
   </component>
 </project>

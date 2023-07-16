@@ -13,6 +13,9 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='yacht',
             name='yacht_image',
-            field=models.ManyToManyField(null=True, related_name='yachts', to='catalog.image'),
+            field=models.ManyToManyField(
+                null=True,
+                related_name='yachts',
+                to='catalog.image'),
         ),
     ]

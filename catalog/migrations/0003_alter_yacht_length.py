@@ -13,6 +13,9 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='yacht',
             name='length',
-            field=models.DecimalField(decimal_places=2, help_text='Enter the exact length of the yacht in ft.', max_digits=5),
+            field=models.DecimalField(
+                decimal_places=2,
+                help_text='Enter the exact length of the yacht in ft.',
+                max_digits=5),
         ),
     ]

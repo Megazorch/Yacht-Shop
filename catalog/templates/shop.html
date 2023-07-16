@@ -15,16 +15,22 @@
             <div class="col-lg-3">
                 <h1 class="h2 pb-4">Categories</h1>
                 <ul class="list-unstyled templatemo-accordion">
+                    <a class="collapsed d-flex justify-content-between h3 text-decoration-none"
+                               href="/catalog/yachts/">All yachts</a>
                     {% for category in categories %}
                         <li class="pb-3">
                             <a class="collapsed d-flex justify-content-between h3 text-decoration-none"
-                               href="/catalog/yachts/?category={{ forloop.counter }}">
+                               href="/catalog/yachts/?category=">
                                 {{ category.category }}
                                 <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
                             </a>
-                            <ul class="collapse show list-unstyled pl-3">
-                                <li><a class="text-decoration-none" href="#">None</a></li>
-                            </ul>
+                            {% for category_id, amount in yachts_in_each_category %}
+                                {% if category_id == forloop.parentloop.counter %}
+                                    <ul class="collapse show list-unstyled pl-3">
+                                        <li><a class="text-decoration-none" href="/catalog/yachts/?category={{ forloop.parentloop.counter }}">Total amount: {{ amount }}</a></li>
+                                    </ul>
+                                {% endif %}
+                            {% endfor %}
                         </li>
                     {% endfor %}
                 </ul>
@@ -33,8 +39,8 @@
             <div class="col-lg-9">
                 <div class="row">
                     <div class="col-md-6">
-                        <ul class="list-inline shop-top-menu pb-3 pt-1">
-                            <li class="list-inline-item">
+                        <!-- <ul class="list-inline shop-top-menu pb-3 pt-1">
+                             <li class="list-inline-item">
                                 <a class="h3 text-dark text-decoration-none mr-3" href="/catalog/yachts/">All</a>
                             </li>
                             {% for category in categories %}
@@ -43,14 +49,14 @@
                                     href="/catalog/yachts/?category={{ forloop.counter }}">{{ category.category }}</a>
                                 </li>
                             {% endfor %}
-                        </ul>
+                        </ul> -->
                     </div>
                     <div class="col-md-6 pb-4">
                         <div class="d-flex">
-                            <select class="form-control">
-                                <option>Featured</option>
-                                <option>A to Z</option>
-                                <option>Item</option>
+                            <select class="form-control" id="sort_option">
+                                {% for value, option in sort_options %}
+                                    <option value="{{ value }}">{{ option }}</option>
+                                {% endfor %}
                             </select>
                         </div>
                     </div>
@@ -233,3 +239,7 @@
     </section>
     <!--End Brands-->
     {% endblock two %}
+
+    {% block more_js %}
+    <script src="{% static 'js/sort_option.js' %}"></script>
+    {% endblock more_js %}

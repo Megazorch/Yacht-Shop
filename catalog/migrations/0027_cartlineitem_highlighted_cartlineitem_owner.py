@@ -16,12 +16,18 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='cartlineitem',
             name='highlighted',
-            field=models.TextField(blank=True, null=True),
+            field=models.TextField(
+                blank=True,
+                null=True),
         ),
         migrations.AddField(
             model_name='cartlineitem',
             name='owner',
-            field=models.ForeignKey(default='1', on_delete=django.db.models.deletion.CASCADE, related_name='carts', to=settings.AUTH_USER_MODEL),
+            field=models.ForeignKey(
+                default='1',
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name='carts',
+                to=settings.AUTH_USER_MODEL),
             preserve_default=False,
         ),
     ]

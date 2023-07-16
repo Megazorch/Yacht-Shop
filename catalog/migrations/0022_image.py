@@ -6,15 +6,23 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('catalog', '0021_remove_cartlineitem_cart_remove_cartlineitem_yacht_and_more'),
+        ('catalog',
+         '0021_remove_cartlineitem_cart_remove_cartlineitem_yacht_and_more'),
     ]
 
     operations = [
         migrations.CreateModel(
             name='Image',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('image', models.ImageField(upload_to='images/')),
+                ('id',
+                 models.BigAutoField(
+                     auto_created=True,
+                     primary_key=True,
+                     serialize=False,
+                     verbose_name='ID')),
+                ('image',
+                 models.ImageField(
+                     upload_to='images/')),
             ],
             options={
                 'ordering': ['image'],

@@ -14,14 +14,26 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Cart',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id',
+                 models.BigAutoField(
+                     auto_created=True,
+                     primary_key=True,
+                     serialize=False,
+                     verbose_name='ID')),
             ],
         ),
         migrations.CreateModel(
             name='Image',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('image', models.ImageField(upload_to='images/')),
+                ('id',
+                 models.BigAutoField(
+                     auto_created=True,
+                     primary_key=True,
+                     serialize=False,
+                     verbose_name='ID')),
+                ('image',
+                 models.ImageField(
+                     upload_to='images/')),
             ],
             options={
                 'ordering': ['image'],
@@ -30,10 +42,25 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='CartLineItem',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('count', models.PositiveIntegerField(help_text='Enter number of items.')),
-                ('cart', models.ForeignKey(help_text='Choose Cart id.', on_delete=django.db.models.deletion.CASCADE, to='catalog.cart')),
-                ('yacht', models.ForeignKey(help_text='Choose Yacht id.', on_delete=django.db.models.deletion.CASCADE, to='catalog.yacht')),
+                ('id',
+                 models.BigAutoField(
+                     auto_created=True,
+                     primary_key=True,
+                     serialize=False,
+                     verbose_name='ID')),
+                ('count',
+                 models.PositiveIntegerField(
+                     help_text='Enter number of items.')),
+                ('cart',
+                 models.ForeignKey(
+                     help_text='Choose Cart id.',
+                     on_delete=django.db.models.deletion.CASCADE,
+                     to='catalog.cart')),
+                ('yacht',
+                 models.ForeignKey(
+                     help_text='Choose Yacht id.',
+                     on_delete=django.db.models.deletion.CASCADE,
+                     to='catalog.yacht')),
             ],
             options={
                 'ordering': ['id'],
@@ -42,6 +69,8 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='yacht',
             name='yacht_image',
-            field=models.ManyToManyField(related_name='yachts', to='catalog.image'),
+            field=models.ManyToManyField(
+                related_name='yachts',
+                to='catalog.image'),
         ),
     ]

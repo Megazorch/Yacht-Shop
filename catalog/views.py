@@ -1,6 +1,7 @@
 """
 Definition of views.
 """
+from django.db import connection
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
@@ -40,20 +41,63 @@ class ContactView(generic.TemplateView):
 class YachtListView(generic.ListView):
     """ Yacht list view class """
     model = models.Yacht
-    template_name = 'shop.html'  # Specify your own template name/location
+    template_name = 'shop.html'
 
     def get_queryset(self):     # ChatGPT
         queryset = super().get_queryset()
         category_id = self.request.GET.get('category', )
+        sort_option = self.request.GET.get('sort', )
 
         # Filter the queryset based on the category_id
-        if category_id:
-            queryset = queryset.filter(category__id=category_id)
+        if category_id and sort_option:
+            sort_option = sort_option.split('_')
+            query = """SELECT y.*
+                        FROM catalog_yacht AS y
+                        JOIN catalog_yacht_category AS yc ON y.id = yc.yacht_id
+                        JOIN catalog_category AS c ON yc.category_id = c.id
+                        WHERE c.id = %s
+                        ORDER BY
+                        """ + sort_option[0] + """ """ + sort_option[1] + ';'
+            params = [category_id]
+            queryset = models.Yacht.objects.raw(query, params)
+
+        elif category_id:
+            # because 'A to Z' option first we sort by 'model'
+            queryset = queryset.filter(
+                category__id=category_id).order_by('model')
+
+        elif sort_option:
+            sort_option = sort_option.split('_')
+            if sort_option[1] == 'desc':
+                queryset = queryset.order_by('-' + sort_option[0])
+            else:
+                queryset = queryset.order_by(sort_option[0])
+        else:
+            # default sorting by 'A to Z'
+            queryset = queryset.order_by('model')
+
         return queryset
 
     def get_context_data(self, **kwargs):       # ChatGPT
         context = super().get_context_data(**kwargs)
         context['categories'] = models.Category.objects.all()
+
+        with connection.cursor() as cursor:
+            cursor.execute(
+                """SELECT category_id, COUNT(*) FROM catalog_yacht_category
+                            JOIN catalog_category
+                            ON catalog_yacht_category.category_id = catalog_category.id   
+                            GROUP BY category_id;""")
+            yachts_in_each_category = cursor.fetchall()
+
+        context['yachts_in_each_category'] = yachts_in_each_category
+
+        # choices for sorting with select tag
+        choices = [('model_asc', 'A to Z'), ('model_desc', 'Z to A'),
+                   ('price_asc', 'Cheap to Expensive'), ('price_desc', 'Expensive to Cheap'),
+                   ('year_desc', 'Newest to Oldest'), ('year_asc', 'Oldest to Newest'),
+                   ('length_asc', 'Shortest to Longest'), ('length_desc', 'Longest to Shortest')]
+        context['sort_options'] = choices
         return context
 
 
@@ -90,11 +134,13 @@ class YachtDetailView(generic.DetailView):
             if not request.user.is_authenticated:
                 return redirect('/accounts/login')
 
-            cart, created = models.Cart.objects.get_or_create(user=request.user)    # pylint: disable=unused-variable
+            cart, created = models.Cart.objects.get_or_create(  # pylint: disable=unused-variable
+                user=request.user)
 
             # Check if the yacht is already in the cart
             try:
-                cart_item = models.CartLineItem.objects.get(cart=cart, yacht=yacht)
+                cart_item = models.CartLineItem.objects.get(
+                    cart=cart, yacht=yacht)
                 cart_item.quantity += quantity  # Update quantity if yacht already exists
                 cart_item.save()
             except models.CartLineItem.DoesNotExist:
@@ -107,7 +153,7 @@ class YachtDetailView(generic.DetailView):
             return redirect(cart_path)  # Redirect to cart view
 
         return render(request, 'yacht-detail.html',
-                          {'yacht': yacht, 'form': form})
+                      {'yacht': yacht, 'form': form})
 
     def get_context_data(self, **kwargs):       # ChatGPT
         """ Get context data for yacht shop view
@@ -122,7 +168,7 @@ class YachtDetailView(generic.DetailView):
 class CartDetailView(generic.DetailView):
     """ Cart detail view class """
     model = models.Cart
-    form = forms.AddToCartForm()
+    # form = forms.AddToCartForm()
     template_name = 'cart.html'
 
     def get_context_data(self, **kwargs):       # ChatGPT

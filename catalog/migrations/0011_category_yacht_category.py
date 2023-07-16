@@ -13,13 +13,23 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Category',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('category', models.CharField(help_text='Enter the name of category.', max_length=25)),
+                ('id',
+                 models.BigAutoField(
+                     auto_created=True,
+                     primary_key=True,
+                     serialize=False,
+                     verbose_name='ID')),
+                ('category',
+                 models.CharField(
+                     help_text='Enter the name of category.',
+                     max_length=25)),
             ],
         ),
         migrations.AddField(
             model_name='yacht',
             name='category',
-            field=models.ManyToManyField(help_text='Enter the category of the yacht.', to='catalog.category'),
+            field=models.ManyToManyField(
+                help_text='Enter the category of the yacht.',
+                to='catalog.category'),
         ),
     ]

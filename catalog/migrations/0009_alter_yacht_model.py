@@ -13,6 +13,8 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='yacht',
             name='model',
-            field=models.CharField(help_text='Enter the model type of the yacht.', max_length=40),
+            field=models.CharField(
+                help_text='Enter the model type of the yacht.',
+                max_length=40),
         ),
     ]

@@ -91,24 +91,24 @@ https://templatemo.com/tm-559-zay-shop
                     <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
                     </a>
-                    {% block cart_user %}
-                    <a class="nav-icon position-relative text-decoration-none" href="{% url 'cart' 2 %}">
-                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
-                    </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
-                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
-                    </a>
-
                     {% if user.is_authenticated %}
-                     <span style="margin:15px;">User: <strong>{{ user.get_username }}</strong></span>
-                     <span><a href="{% url 'logout' %}?next={{ request.path }}">Logout</a></span>
+                        <a class="nav-icon position-relative text-decoration-none" href="{% url 'cart' card_id %}">
+                            <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                            <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">{{ total_amount_of_items_in_cart }}</span>
+                        </a>
+                        <a class="nav-icon position-relative text-decoration-none" href="#">
+                            <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                            <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">{{ user.get_username }}</span>
+                        </a>
+                        <!--<span style="margin:15px;">User: <strong>{{ user.get_username }}</strong></span>-->
+                        <!--<span><a href="{% url 'logout' %}?next={{ request.path }}">Logout</a></span>-->
+                        <span><a class="text-light" href="{% url 'logout' %}?next={{ request.path }}" target="_blank">
+                                <i class="fa fa-fw fa-door-closed text-dark mr-2"></i></a></span>
                     {% else %}
-                     <span><a href="{% url 'login' %}?next={{ request.path }}">Login</a></span>
+                        <!--<span><a href="{% url 'login' %}?next={{ request.path }}">Login</a></span>-->
+                        <span><a class="text-light" href="{% url 'login' %}?next={{ request.path }}" target="_blank">
+                            <i class="fa fa-fw fa-door-open text-dark mr-2"></i></a></span>
                     {% endif %}
-
-                    {% endblock cart_user %}
                 </div>
             </div>
 
@@ -152,11 +152,11 @@ https://templatemo.com/tm-559-zay-shop
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
-                                <h1 class="h1 text-success"><b>Y-Shop</b> Find Your's</h1>
+                                <h1 class="h1 text-success"><b>Yacht-Shop</b> Find Your's</h1>
                                 <h3 class="h2">The best collection of yachts from all over the world.</h3>
                                 <p>
-                                    Y-Shop is a commercial website were you can buy or sell any yacht you've
-                                    ever dream about. Waste your time with us.
+                                    Yacht-Shop is a <strong>non-commercial</strong> website were you can't buy or sell
+                                    any yacht you've ever dreamed about. Waste your time with us.
                                 </p>
                             </div>
                         </div>
@@ -171,11 +171,10 @@ https://templatemo.com/tm-559-zay-shop
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
-                                <h1 class="h1">Proident occaecat</h1>
-                                <h3 class="h2">Aliquip ex ea commodo consequat</h3>
+                                <h1 class="h1">About Us</h1>
+                                <h3 class="h2">Web site is writen on Django</h3>
                                 <p>
-                                    You are permitted to use this Y-Shop CSS template for your commercial websites.
-                                    You are <strong>not permitted</strong> to re-distribute the template ZIP file in any kind of template collection websites.
+                                    For more information check <italic>About</italic> page.
                                 </p>
                             </div>
                         </div>
@@ -190,11 +189,10 @@ https://templatemo.com/tm-559-zay-shop
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
-                                <h1 class="h1">Repr in voluptate</h1>
-                                <h3 class="h2">Ullamco laboris nisi ut </h3>
+                                <h1 class="h1">Better experience</h1>
+                                <h3 class="h2">What are you expecting?</h3>
                                 <p>
-                                    We bring you 100% free CSS templates for your websites.
-                                    If you wish to support TemplateMo, please make a small contribution via PayPal or tell your friends about our website. Thank you.
+                                    You may login to see how some aspectes are working. Soon will make cookies.
                                 </p>
                             </div>
                         </div>
@@ -212,105 +210,10 @@ https://templatemo.com/tm-559-zay-shop
     {% endblock one %}
     <!-- End Banner Hero -->
 
-
     <!-- Start Categories of The Month -->
     {% block two %}
     {% endblock two %}
     <!-- End Categories of The Month -->
-
-
-    <!-- Start Featured Product -->
-    <!--
-    <section class="bg-light">
-        <div class="container py-5">
-            <div class="row text-center py-3">
-                <div class="col-lg-6 m-auto">
-                    <h1 class="h1">Featured Product</h1>
-                    <p>
-                        Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card h-100">
-                        <a href="shop-single.html">
-                            <img src="./assets/img/feature_prod_01.jpg" class="card-img-top" alt="...">
-                        </a>
-                        <div class="card-body">
-                            <ul class="list-unstyled d-flex justify-content-between">
-                                <li>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
-                                </li>
-                                <li class="text-muted text-right">$240.00</li>
-                            </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Gym Weight</a>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
-                            </p>
-                            <p class="text-muted">Reviews (24)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card h-100">
-                        <a href="shop-single.html">
-                            <img src="./assets/img/feature_prod_02.jpg" class="card-img-top" alt="...">
-                        </a>
-                        <div class="card-body">
-                            <ul class="list-unstyled d-flex justify-content-between">
-                                <li>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
-                                </li>
-                                <li class="text-muted text-right">$480.00</li>
-                            </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Cloud Nike Shoes</a>
-                            <p class="card-text">
-                                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
-                            </p>
-                            <p class="text-muted">Reviews (48)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card h-100">
-                        <a href="shop-single.html">
-                            <img src="./assets/img/feature_prod_03.jpg" class="card-img-top" alt="...">
-                        </a>
-                        <div class="card-body">
-                            <ul class="list-unstyled d-flex justify-content-between">
-                                <li>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                </li>
-                                <li class="text-muted text-right">$360.00</li>
-                            </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Summer Addides Shoes</a>
-                            <p class="card-text">
-                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
-                            </p>
-                            <p class="text-muted">Reviews (74)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-    <!-- End Featured Product -->
-
 
     <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
@@ -322,7 +225,7 @@ https://templatemo.com/tm-559-zay-shop
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fas fa-map-marker-alt fa-fw"></i>
-                            Somewhere in this universe.
+                            Odesa,Ukraine
                         </li>
                         <li>
                             <i class="fa fa-phone fa-fw"></i>
@@ -338,26 +241,18 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Categories</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        {% block categories %}
-                        <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                        <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
-                        <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
-                        {% endblock categories %}
+                        {% for category in list_of_categories %}
+                            <li><a class="text-decoration-none" href="/catalog/yachts/?category={{ forloop.counter }}">{{ category }}</a></li>
+                        {% endfor %}
                     </ul>
                 </div>
 
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Home</a></li>
-                        <li><a class="text-decoration-none" href="#">About Us</a></li>
-                        <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
-                        <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                        <li><a class="text-decoration-none" href="#">Contact</a></li>
+                        <li><a class="text-decoration-none" href="{% url 'index' %}">Home</a></li>
+                        <li><a class="text-decoration-none" href="{% url 'about' %}">About Project</a></li>
+                        <li><a class="text-decoration-none" href="{% url 'contact' %}">Contact</a></li>
                     </ul>
                 </div>
 
@@ -414,7 +309,6 @@ https://templatemo.com/tm-559-zay-shop
         <script src="{% static 'js/jquery-migrate-1.2.1.min.js' %}"></script>
         <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
         <script src="{% static 'js/templatemo.js' %}"></script>
-        <script src="{% static 'js/custom.js' %}"></script>
     <!-- End Script -->
 
     {% block more_js %}{% endblock more_js %}

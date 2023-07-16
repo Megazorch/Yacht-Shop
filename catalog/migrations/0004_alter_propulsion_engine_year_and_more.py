@@ -13,11 +13,17 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='propulsion',
             name='engine_year',
-            field=models.PositiveIntegerField(blank=True, help_text='Enter the year of build of the engine.', null=True),
+            field=models.PositiveIntegerField(
+                blank=True,
+                help_text='Enter the year of build of the engine.',
+                null=True),
         ),
         migrations.AlterField(
             model_name='propulsion',
             name='total_power',
-            field=models.PositiveIntegerField(blank=True, help_text='Enter the total power of engine in Horse Powers.', null=True),
+            field=models.PositiveIntegerField(
+                blank=True,
+                help_text='Enter the total power of engine in Horse Powers.',
+                null=True),
         ),
     ]

@@ -4,3 +4,4 @@ media/
 backup.sql
 requirements.txt
 .pylintrc
+tips.txt
