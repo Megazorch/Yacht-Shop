@@ -1,3 +1,9 @@
 logins.txt
 backup.sql
-
+.env.dev
+.env.example
+.pylintrc
+.dockerignore
+README.md
+tips.txt
+media
