@@ -15,6 +15,7 @@ djangorestframework = "*"
 httpie = "*"
 autopep8 = "*"
 pylint-django = "*"
+gunicorn = "*"
 
 [dev-packages]
 
