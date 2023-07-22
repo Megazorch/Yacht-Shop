@@ -1,0 +1,11 @@
+# Use postgres/example user/password credentials
+version: '3.8'
+
+services:
+  web:
+    image: yacht-shop:1.6
+    network_mode: host
+    env_file:
+      - ./.env
+    volumes:
+      - ./media:/yacht-shop/media
