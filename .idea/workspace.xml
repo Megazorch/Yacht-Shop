@@ -7,11 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Installed gunicorn">
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Commit.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/shop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yacht_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-dep.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-dep.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,27 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00131" summary="Updated pylint action">
-      <created>1688829308773</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1688829308775</updated>
-    </task>
-    <task id="LOCAL-00132" summary="Refactored test to solve bug">
-      <created>1688830870744</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1688830870744</updated>
-    </task>
-    <task id="LOCAL-00133" summary="Refactored test command">
-      <created>1688830888444</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1688830888444</updated>
     </task>
     <task id="LOCAL-00134" summary="Changed python version for more lightweight version">
       <created>1688887923582</created>
@@ -433,13 +410,31 @@
       <option name="project" value="LOCAL" />
       <updated>1690053031217</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="Minor changes to make settings.py universal for development and deployment.">
+      <created>1690053152273</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1690053152273</updated>
+    </task>
+    <task id="LOCAL-00181" summary="Minor changes.">
+      <created>1690053174203</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1690053174204</updated>
+    </task>
+    <task id="LOCAL-00182" summary="Commit.">
+      <created>1690053181025</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1690053181025</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added link to return back to all yachts in the list." />
-    <MESSAGE value="Modified categories so that it generate a correct url." />
-    <MESSAGE value="Deleted categories from above panel." />
     <MESSAGE value="Modified select tag so that it shows a proper value for sorting." />
     <MESSAGE value="Add JavaScript file that will sort list listening to changes in select tag." />
     <MESSAGE value="Created script that generates a new url depending on current url and select option chosen by user." />
@@ -462,6 +457,9 @@
     <MESSAGE value="Version for development." />
     <MESSAGE value="Now I collact static files inside biulder and than copy all project to runtime. Also makes gunicorn runs my app." />
     <MESSAGE value="Installed gunicorn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Installed gunicorn" />
+    <MESSAGE value="Minor changes to make settings.py universal for development and deployment." />
+    <MESSAGE value="Minor changes." />
+    <MESSAGE value="Commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit." />
   </component>
 </project>
