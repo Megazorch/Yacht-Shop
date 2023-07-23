@@ -1,5 +1,6 @@
 logins.txt
 backup.sql
+.env
 .env.dev
 .env.example
 .pylintrc

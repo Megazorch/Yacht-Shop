@@ -3,7 +3,7 @@ version: '3.8'
 
 services:
   web:
-    image: yacht-shop:1.6
+    image: yacht-shop:1.7
     network_mode: host
     env_file:
       - ./.env

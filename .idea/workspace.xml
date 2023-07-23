@@ -7,7 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Added volumes for media" />
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Commit">
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,13 +88,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00135" summary="Created action to create and publish docker image to GitHub Packages">
-      <created>1688888000207</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1688888000207</updated>
     </task>
     <task id="LOCAL-00136" summary="Resolve merge conflict">
       <created>1688892549343</created>
@@ -428,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690106707386</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="Commit">
+      <created>1690106899136</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1690106899136</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -437,7 +441,6 @@
     <MESSAGE value="Returned previous url link for Serializer." />
     <MESSAGE value="Added link to JS script that listen to changes it quantity of items in cart." />
     <MESSAGE value="Added raw SQL and logic for 'sort' parameter from url." />
-    <MESSAGE value="Commit" />
     <MESSAGE value="Autopep8" />
     <MESSAGE value="Autopep8 and pylint changes" />
     <MESSAGE value="Refactor name of function" />
@@ -457,6 +460,7 @@
     <MESSAGE value="Minor changes." />
     <MESSAGE value="Commit." />
     <MESSAGE value="Added volumes for media" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added volumes for media" />
+    <MESSAGE value="Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
   </component>
 </project>
