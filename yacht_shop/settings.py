@@ -28,7 +28,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['yacht-shop.pp.ua', '64.225.109.96', '127.0.0.1']
 
 # Redirect to home URL after login (Default redirects to /accounts/profile/)
 LOGIN_REDIRECT_URL = '/'
@@ -94,7 +94,7 @@ DATABASES = {
         'NAME': env("DB_NAME"),
         'USER': env("DB_USER"),
         'PASSWORD': env("DB_PASS"),
-        'HOST': env("DB_HOST"),     # as in docker-compose.yml
+        'HOST': env("DB_HOST"),     # as in docker-compose-dev.yml
         'PORT': env("DB_PORT"),
         },
     }
@@ -138,13 +138,19 @@ USE_TZ = True
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
-#STATIC_ROOT = '/home/runner/work/Yacht-Shop/Yacht-Shop/static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+# '/yacht-shop/Yacht-Shop/catalog/static/',
+'''STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static/'),
+)'''
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+'''STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]'''
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
