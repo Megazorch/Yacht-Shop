@@ -1,4 +1,4 @@
-# version 1.6 | 22/07/2023
+# version 1.7 | 22/07/2023
 FROM docker.io/oz123/pipenv:3.11-v2023-6-26 AS builder
 
 # Tell pipenv to create venv in the current directory
@@ -10,15 +10,10 @@ ADD Pipfile.lock Pipfile /usr/src/
 WORKDIR /usr/src
 
 # Install dependencie
-RUN pipenv requirements > requirements.txt && \
-    pip install --no-cache-dir -r requirements.txt
+RUN pipenv requirements > requirements.txt
 
 # Copy the application code
 COPY . .
-
-# Collect static files (Django must be installed at this point)
-RUN python manage.py collectstatic --noinput && \
-    rm /usr/src/.env
 
 # Base image
 FROM python:3.11.4-slim-bullseye AS runtime

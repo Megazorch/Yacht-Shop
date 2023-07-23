@@ -1,9 +1,10 @@
 .env
 .env.dev
-logins.txt
-media/
-backup.sql
-requirements.txt
 .pylintrc
-tips.txt
 .dockerignore
+logins.txt
+requirements.txt
+tips.txt
+backup.sql
+media/
+catalog/static/
