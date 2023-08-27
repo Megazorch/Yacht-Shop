@@ -2,10 +2,39 @@
 version: '3.8'
 
 services:
-  web:
-    image: yacht-shop:1.7
-    network_mode: host
-    env_file:
-      - ./.env
+  nginx:
+    build: ./nginx
     volumes:
-      - ./media:/yacht-shop/media
+      - /home/ivakhiv/PycharmProjects/yacht_shop/static:/home/app/yacht_shop/static
+      - /home/ivakhiv/PycharmProjects/yacht_shop/media:/home/app/yacht_shop/media
+    ports:
+      - 8081:8080
+    depends_on:
+      - web
+    restart: "on-failure"
+  web:
+    image: yacht-shop:1.8.7
+    volumes:
+      - /home/ivakhiv/PycharmProjects/yacht_shop/static:/home/app/yacht_shop/static
+      - /home/ivakhiv/PycharmProjects/yacht_shop/media:/home/app/yacht_shop/media
+    env_file:
+      - ./.env.dev
+    restart: "on-failure"
+    depends_on:
+      - db
+  db:
+      image: postgres:15-alpine
+      ports:
+        - 8082:5432
+      volumes:
+        - ./initdb:/docker-entrypoint-initdb.d
+        - postgres_data:/var/lib/postgresql/data/
+      environment:
+        - POSTGRES_USER=roman
+        - POSTGRES_PASSWORD=Romashka234=+
+        - POSTGRES_DB=${DB_NAME}
+        - PORT=${DB_PORT}
+      restart: "on-failure"
+
+volumes:
+  postgres_data:

@@ -18,15 +18,33 @@ COPY . .
 # Base image
 FROM python:3.11.4-slim-bullseye AS runtime
 
+ENV YACHT_SHOP=/home/app/yacht_shop
+ENV APP_USER=megazorch
+RUN addgroup --system $APP_USER && adduser --system $APP_USER --ingroup $APP_USER
+
+
 # Set the working directory
-WORKDIR /yacht-shop
+RUN mkdir -p $YACHT_SHOP
+RUN mkdir -p $YACHT_SHOP/static
+RUN mkdir -p $YACHT_SHOP/media
+WORKDIR $YACHT_SHOP
+
+# set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
 # Copy the application code from the 'builder' stage
-COPY --from=builder /usr/src /yacht-shop
+COPY --from=builder /usr/src $YACHT_SHOP
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Run Gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "yacht_shop.wsgi:application"]
+# Giving the script an executable permissions
+RUN chmod +x /home/app/yacht_shop/entrypoint.sh
+
+# Set ownership and permissions for the media directory
+RUN chown -R megazorch:megazorch /home/app/yacht_shop/media
+
+# Execute script
+ENTRYPOINT ["/home/app/yacht_shop/entrypoint.sh"]
 

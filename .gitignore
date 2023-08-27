@@ -5,6 +5,8 @@
 logins.txt
 requirements.txt
 tips.txt
-backup.sql
+init.sql
+initdb/backup.sql
 media/
 catalog/static/
+initdb

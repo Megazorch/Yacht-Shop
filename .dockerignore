@@ -1,5 +1,5 @@
 logins.txt
-backup.sql
+initdb/backup.sql
 .env
 .env.dev
 .env.example
@@ -8,3 +8,5 @@ backup.sql
 README.md
 tips.txt
 media
+static
+init.sql
