@@ -7,8 +7,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Cansel creating static folder inside docker.">
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Version-2023/07/23">
+      <change afterPath="$PROJECT_DIR$/entrypoint.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/docker.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-dep.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-dep.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yacht_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +82,11 @@
       <recent name="$PROJECT_DIR$/catalog/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/initdb" />
+      <recent name="$PROJECT_DIR$/nginx" />
       <recent name="$PROJECT_DIR$/catalog" />
       <recent name="$PROJECT_DIR$/catalog/templates" />
       <recent name="$PROJECT_DIR$/templates" />
-      <recent name="$PROJECT_DIR$/catalog/tests" />
-      <recent name="$PROJECT_DIR$/catalog/templates/catalog" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -86,13 +97,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00137" summary="Create custom processor to use it in base_generic.html">
-      <created>1689426441004</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1689426441005</updated>
     </task>
     <task id="LOCAL-00138" summary="My photo for about.html">
       <created>1689426466168</created>
@@ -430,11 +434,17 @@
       <option name="project" value="LOCAL" />
       <updated>1690108202780</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="Version-2023/07/23">
+      <created>1690108788653</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1690108788654</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created script that generates a new url depending on current url and select option chosen by user." />
     <MESSAGE value="Returned previous url link for Serializer." />
     <MESSAGE value="Added link to JS script that listen to changes it quantity of items in cart." />
     <MESSAGE value="Added raw SQL and logic for 'sort' parameter from url." />
@@ -459,6 +469,7 @@
     <MESSAGE value="Added volumes for media" />
     <MESSAGE value="Commit" />
     <MESSAGE value="Cansel creating static folder inside docker." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cansel creating static folder inside docker." />
+    <MESSAGE value="Version-2023/07/23" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version-2023/07/23" />
   </component>
 </project>
