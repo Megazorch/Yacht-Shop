@@ -94,7 +94,7 @@ DATABASES = {
         'NAME': env("DB_NAME"),
         'USER': env("DB_USER"),
         'PASSWORD': env("DB_PASS"),
-        'HOST': env("DB_HOST"),     # as in docker-compose-dev.yml
+        'HOST': env("DB_HOST"),     # as in Dockerfile-compose-dev.yml
         'PORT': env("DB_PORT"),
         },
     }
