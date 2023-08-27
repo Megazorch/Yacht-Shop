@@ -2,10 +2,39 @@
 version: '3.8'
 
 services:
+  nginx:
+    build: ./nginx
+    volumes:
+      - /home/megazorch/yacht-shop/static:/home/app/yacht_shop/static
+      - /home/megazorch/yacht-shop/media:/home/app/yacht_shop/media
+    ports:
+      - 8081:8080
+    depends_on:
+      - web
+    restart: "on-failure"
   web:
     image: ghcr.io/megazorch/yacht-shop:release
-    network_mode: host
+    volumes:
+      - /home/megazorch/yacht-shop/static:/home/app/yacht_shop/static
+      - /home/megazorch/yacht-shop/media:/home/app/yacht_shop/media
     env_file:
       - ./.env
-    volumes:
-      - ./media:/yacht-shop/media
+    restart: "on-failure"
+    depends_on:
+      - db
+  db:
+      image: postgres:15-alpine
+      ports:
+        - 8082:5432
+      volumes:
+        - ./initdb:/docker-entrypoint-initdb.d
+        - postgres_data:/var/lib/postgresql/data/
+      environment:
+        - POSTGRES_USER={DB_USER}
+        - POSTGRES_PASSWORD={DB_PASS}
+        - POSTGRES_DB=${DB_NAME}
+        - PORT=${DB_PORT}
+      restart: "on-failure"
+
+volumes:
+  postgres_data:
