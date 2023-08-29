@@ -28,7 +28,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
 
-ALLOWED_HOSTS = ['yacht-shop.pp.ua', '64.225.109.96', '127.0.0.1']
+ALLOWED_HOSTS = ['*']   # Due to docker there is no need for hosts
 
 # Redirect to home URL after login (Default redirects to /accounts/profile/)
 LOGIN_REDIRECT_URL = '/'
