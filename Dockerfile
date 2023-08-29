@@ -33,6 +33,9 @@ WORKDIR $YACHT_SHOP
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
+# Copy the application code from the 'builder' stage
+COPY --from=builder /usr/src $YACHT_SHOP
+
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
@@ -41,9 +44,6 @@ RUN chmod +x /home/app/yacht_shop/entrypoint.sh
 
 # Set ownership and permissions for the media directory
 RUN chown -R megazorch:megazorch /home/app/yacht_shop/media
-
-# Copy the application code from the 'builder' stage
-COPY --from=builder /usr/src $YACHT_SHOP
 
 # Execute script
 ENTRYPOINT ["/home/app/yacht_shop/entrypoint.sh"]

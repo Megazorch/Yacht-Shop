@@ -7,12 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="Version - 27/08/2023 - First deployment to RackNerd Server.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yacht_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yacht_shop/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="19cf4857-3fd4-4485-9ca2-661140aef4c4" name="Changes" comment="New release - v.29/08/2023-22.18" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,13 +84,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679515202273</updated>
-    </task>
-    <task id="LOCAL-00151" summary="Add JavaScript file that will sort list listening to changes in select tag.">
-      <created>1689430158618</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1689430158618</updated>
     </task>
     <task id="LOCAL-00152" summary="Created script that generates a new url depending on current url and select option chosen by user.">
       <created>1689430220464</created>
@@ -433,11 +421,28 @@
       <option name="project" value="LOCAL" />
       <updated>1693142972721</updated>
     </task>
-    <option name="localTasksCounter" value="200" />
+    <task id="LOCAL-00200" summary="New release - v.29/08/2023-22.18">
+      <created>1693336727483</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1693336727485</updated>
+    </task>
+    <option name="localTasksCounter" value="201" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed bug when page crashes when user creates an account for the first time due to lack of personal card_id." />
     <MESSAGE value="Version for deployment." />
     <MESSAGE value="Version for development." />
     <MESSAGE value="Now I collact static files inside biulder and than copy all project to runtime. Also makes gunicorn runs my app." />
@@ -462,6 +467,7 @@
     <MESSAGE value="Added comment for myself." />
     <MESSAGE value="Version - 27/08/2023" />
     <MESSAGE value="For history." />
-    <option name="LAST_COMMIT_MESSAGE" value="For history." />
+    <MESSAGE value="New release - v.29/08/2023-22.18" />
+    <option name="LAST_COMMIT_MESSAGE" value="New release - v.29/08/2023-22.18" />
   </component>
 </project>
